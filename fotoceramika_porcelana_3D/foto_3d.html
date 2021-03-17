@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Zdjęcia na porcelanie 3D</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+    
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+    <script src="js/foto-3d.js" defer></script>
+    
+    <link rel='stylesheet' type='text/css' href='style.css'>
+</head>
+<body>
+
+    <header>
+        <button class="hamburger"> 
+            <span class="hamburger-container"> 
+                <span></span> 
+                <span></span> 
+                <span></span> 
+                <span></span> 
+            </span> 
+        </button>
+        <nav class="navbar-top">
+            <a class="navbar-logo" href="#">
+            <img src="./img/Sygnet.png" class="d-inline-block align-top" alt="Logo">
+            FotoCeramika
+            </a>
+            <div class="navbar-menu-container">
+                <ul class="navbar-menu">
+                    <a href=""><li class="navbar-menu-item">Główna</li></a>
+                    <li class="navbar-menu-item product"><span>Produkty<img src="./img/down-arrow.svg" alt="Ikona strzałka dół"></span><div class="submenu-underline"></div>
+                        <ul class="product-submenu">
+                            <a href=""><li class="nested">Zdjęcia na porcelanie</li></a>
+                            <a href=""><li class="nested">Zdjęcia na porcelanie 3D</li></a>
+                            <a href=""><li class="nested">Zdjęcia na krysztale</li></a>
+                            <a href=""><li class="nested">Kryształ LASER 2.5D</li></a>
+                        </ul>
+                    </li>
+                    <a href=""><li class="navbar-menu-item">Oferta</li></a>
+                    <a href=""><li class="navbar-menu-item">Cennik</li></a>
+                    <a href=""><li class="navbar-menu-item">Kontakt</li></a>
+                </ul>
+                <div class="navbar-login">
+                    <a class="navbar-login-item" href="#">
+                        <img src="./img/zamowienie.svg" alt="Ikona zamówienia">
+                        Złóż zamówienie
+                    </a>
+                    <a class="navbar-login-item" href="#">
+                        <img src="./img/zaloguj.svg" alt="Ikona logowania">
+                        Zaloguj
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="container-fluid foto-3d-heading">
+        <div class="container text-center">
+
+            <div class="row justify-content-center mb-3">
+                <div class="fade-in col-10">
+                    <img src="img/baner.png" width="100%">
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <h1>Fotografia 3D</h1>
+                    <p class="foto-3d-description text-justify m-auto pb-5">
+                        Polega na podniesieniu osoby wzdłuż jej konturu. Idealne uwypuklenie danej postaci z fotografii - 
+                        każda płytka ceramiczna jest wykonana indywidualnie i bazuje wyłącznie na dokładnym kształcie osoby,
+                        zwierzęcia czy przedmiotu ze zdjęcia.
+                    </p>
+                    <button data-aos="fade-up" data-aos-delay="200" data-aos-duration="500" class="btn btn-yellow">
+                        Zamów zdjęcie na porcelanie 3D
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <div class="container-fluid foto-3d-how-its-made">
+        <div class="container">
+                <h3 class="text-center mb-5">Preces tworzenia</h3>
+                 <div class="MultiCarousel" data-items="1,2,4,4" data-slide="1" id="MultiCarousel"  data-interval="1000">
+                        <div class="MultiCarousel-inner">
+                            
+                            <div class="item">
+                                
+                                <div id="creation1A" class="foto-3d-how-its-made-slide">
+                                    <h6 class="foto-3d-add-padding">zdjęcie oryginalne</h6>
+                                    <img class="foto-3d-img" src="img/image1A.png">
+                                    <img class="foto-3d-arrow" src="img/arrow-right.png">
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="item">
+                                
+                                <div id="creation1A" class="foto-3d-how-its-made-slide">
+                                    <h6 class="foto-3d-add-padding">obrys konturów</h6>
+                                    <img class="foto-3d-img" src="img/image1B.png">
+                                    <img class="foto-3d-arrow" src="img/arrow-right.png">
+                                </div>
+                                
+                            </div>
+                            <div class="item">
+                                
+                                <div id="creation1A" class="foto-3d-how-its-made-slide">
+                                    <h6 class="foto-3d-add-padding">unikakalna płytka ceramiczna</h6>
+                                    <img class="foto-3d-img" src="img/image1C.png">
+                                    <img class="foto-3d-arrow" src="img/arrow-right.png">
+                                </div>
+                                
+                            </div>
+                            <div class="item">
+                                
+                                <div id="creation1A" class="foto-3d-how-its-made-slide">
+                                    <h6>wypalanie zdjęcia</h6>
+                                    <img class="foto-3d-img" src="img/image1D.png">
+                                </div>
+                                
+                            </div>
+                                                        <div class="item">
+                                
+                                <div id="creation1A" class="foto-3d-how-its-made-slide">
+                                    <h6 class="foto-3d-add-padding">zdjęcie oryginalne</h6>
+                                    <img class="foto-3d-img" src="img/image2A.png">
+                                    <img class="foto-3d-arrow" src="img/arrow-right.png">
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="item">
+                                
+                                <div id="creation1A" class="foto-3d-how-its-made-slide">
+                                    <h6 class="foto-3d-add-padding">obrys konturów</h6>
+                                    <img class="foto-3d-img" src="img/image2B.png">
+                                    <img class="foto-3d-arrow" src="img/arrow-right.png">
+                                </div>
+                                
+                            </div>
+                            <div class="item">
+                                
+                                <div id="creation1A" class="foto-3d-how-its-made-slide">
+                                    <h6 class="foto-3d-add-padding">unikakalna płytka ceramiczna</h6>
+                                    <img class="foto-3d-img" src="img/image2C.png">
+                                    <img class="foto-3d-arrow" src="img/arrow-right.png">
+                                </div>
+                                
+                            </div>
+                            <div class="item">
+                                
+                                <div id="creation1A" class="foto-3d-how-its-made-slide ">
+                                    <h6>wypalanie zdjęcia</h6>
+                                    <img class="foto-3d-img" src="img/image2D.png">
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <button class="leftLst"><img src="img/arrow-left.png" alt="submit" /></button>
+                        <button class="rightLst"> <img src="img/arrow-right.png" alt="submit" /></button>
+                    </div>
+            	 
+                    
+
+        </div>
+    </div>
+    
+    
+    
+    
+
+    <div class="container-fluid foto-3d-reasons">
+        <div class="container">
+            <div class="row justify-content-center">
+
+                <div data-aos="fade-right" data-aos-duration="800"  class="col-md-4 text-center my-auto">
+                    <img class="foto-3d-image-half" src="img/stojak1.png">
+                </div>
+
+                <div class="col-md-5">
+                    <h1>7 powodów</h1>
+                    <h3>dla których warto nas wybrać</h3>
+
+                    <ul class="foto-3d-list">
+                        <li data-aos="fade-right" data-aos-duration="500" data-aos-delay="100"  data-aos-offset="132"><div class="number">1</div> Wierne odwzorowanie barw</li>
+                        <li data-aos="fade-right" data-aos-duration="500" data-aos-delay="200"  data-aos-offset="66"><div class="number">2</div> Wieczysta gwarancja na warunki atmosferyczne</li>
+                        <li data-aos="fade-right" data-aos-duration="500" data-aos-delay="300" data-aos-offset="-0"><div class="number">3</div> Unikalna płytka ceramiczna</li data-aos="fade-right" data-aos-delay="100">
+                        <li data-aos="fade-right" data-aos-duration="500" data-aos-delay="400" data-aos-offset="-66"><div class="number">4</div> Instrukcja montażu <div class="btn btn-download">(pobierz)</div></li data-aos="fade-right" data-aos-delay="100">
+                        <li data-aos="fade-right" data-aos-duration="500" data-aos-delay="500" data-aos-offset="-132"><div class="number">5</div> Wypał w piecach ceramicznych</li data-aos="fade-right" data-aos-delay="100">
+                        <li data-aos="fade-right" data-aos-duration="500" data-aos-delay="600" data-aos-offset="-198"><div class="number">6</div> Wykonanie dokładnie do krawędzi porcelany</li data-aos="fade-right" data-aos-delay="100">
+                        <li data-aos="fade-right" data-aos-duration="500" data-aos-delay="700" data-aos-offset="-264"><div class="number">7</div> Cyfrowa obóbka zdjęć</li data-aos="fade-right" data-aos-delay="100">
+                    </ul>
+                </div>
+
+                <div class="col-md-8">
+
+                    <h4 class="mt-5">Skorzystaj z pomocy naszych cyfrowych ekspertów</h4>
+                    <p class="foto-3d-description text-justify m-auto">
+                        Dorobienie ubrań, tła, tekstu, retuszu, kolorowanie czy kompozycje. To dla nas nie problem
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid foto-3d-about">
+        <div class="container text-center">
+                <h1 class="mb-4">Czym się wyróżniamy?</h1>
+                <p class="foto-3d-description m-auto text-justify">Dzięki unikalnemu połączeniu różnych technologii,  
+                    opanowaliśmy technologię wypalania zdjęc na porcelanie - wierną oryginałowi, także w zakresie barwy czerwonej. 
+                    Na bieżąco monitorujemy wszystkie nowości technologiczne i nieustannie rozwijamy i ulepszamy proces producji 
+                    zdjęc na porcelanie.</p>
+        </div>
+    </div>
+
+    <div class="container-fluid foto-3d-specification">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-center my-auto">
+                    <img class="foto-3d-image-half" src="img/obraz.png">
+                </div>
+                <div class="col-md-8">
+                    <h5 class="text-center mb-5">Specyfikacja produktu</h5>
+                    <div class="row">
+                        <div class="col-md-6 mb-5">
+                            <div class="icon-wrapper"><img class="icon" src="img/icon1.png"></div><div class="description pr-3 pl-3">Każda porcelana przygotowana jest <b>indywidualnie</b>. Osoby podniesione są, względem reszty ceramiki wdłuż swojego konturu.</div>
+                        </div>
+                        <div class="col-md-6 mb-5">
+                            <div class="icon-wrapper"><img class="icon" src="img/icon4.png"></div><div class="description pr-3 pl-3">Porcelana 3D dostępna jest w 4 kształach: <b>Owal, Prostokąt,</b> Pergamin oraz  Książka.</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-5">
+                            <div class="icon-wrapper"><img class="icon" src="img/icon2.png"></div><div class="description pr-3 pl-3"><b>Instrukcja montażu</b>Link</div>
+                        </div>
+                        <div class="col-md-6 mb-5">
+                            <div class="icon-wrapper"><img class="icon" src="img/icon3.png"></div><div class="description pr-3 pl-3">Zdjęcia 3D wypalane są w <b>piecach ceramicznych</b>. Obraz wykonany jest dokładnie do krawędzi porcelany.</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-fluid foto-3d-quality">
+        <div class="container">
+
+            <div class="row justify-content-center">
+                <div class="col-md-5 text-center">
+                    <h1>Postaw na jakość</h1>
+
+                    <p class="foto-3d-description text-justify m-auto">
+                            Ceramika znana jest od tysiącleci, uznawana jest za szlachetny materiał. Nie oznacza to jednak,
+                            że jest prosta w obróbce. Wręcz przeciwnie. Ze względu na wypały w piecach ceramicznych poddawana 
+                            jest oddziaływaniu wysokich temperatur. Dla tradycyjnej porcelany (talerze, kubki, ceramika artystyczna), przyjmuje się kilka klas jakości, w zależności od efektu końcowego
+                                <br><br>
+                            Wszystkie <b>nasze</b> produkty to najwyższa pierwsza klasa jakości.
+                             
+                    </p>
+
+                    <button data-aos="flip-up" data-aos-delay="600" class="btn btn-blue mt-5">Zamów zdjęcie na porcelanie 3D</button>
+
+                </div>
+
+                <div class="col-md-6 pl-5 my-auto">
+                    <img data-aos="flip-left" data-aos-duration="800" class="foto-3d-image-half foto-3d-image-left" src="img/stojak.png">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-fluid foto-3d-available">
+        <div class="container">
+
+                <div class="col-12 text-center">
+                    <h1>Dostępne kształty</h1>
+                    
+                    <p class="foto-3d-description text-justify m-auto">Zdjęcia dostępne są w owalach, prostokątach, pergaminach oraz książkach. Istnieje możliwość wykonania 
+                        tła imitującego kamień, drewno itp.</p>
+                </div>
+
+
+            <div class="row justify-content-around mt-5">
+
+                    <div class="col-md-4">
+                            
+                            <div class="foto-3d-shape">
+                                <div class="foto-3d-shape-img-wrapper">
+                                    <img src="img/image2C.png" />
+                                </div>
+                                <div class="foto-3d-caption">
+                                  <h4>Owal</h4>
+                                  <p>już od <strong>440,00</strong> zł</p>
+                                </div>
+                                <div data-aos="fade-up" data-aos-duration="800" class="foto-3d-shape-add-to-cart-wrapper">
+                                        <button class="btn btn-outline-secondary">Dodaj do koszyka</button>
+                                </div>
+                                
+                            </div>
+                        
+                    </div>
+
+                    <div class="col-md-4">
+                        
+                            <div class="foto-3d-shape">
+                                    <div class="foto-3d-shape-img-wrapper">
+                                <img src="img/prostokat.png">
+                            </div>
+                                <div class="foto-3d-caption">
+                                  <h4>Prostokąt</h4>
+                                  <p>już od <strong>440,00</strong> zł</p>
+                                </div>
+                                <div data-aos="fade-up" data-aos-duration="5800" class="foto-3d-shape-add-to-cart-wrapper">
+                                        <button class="btn btn-outline-secondary">Dodaj do koszyka</button>
+                                </div>
+                            </div>
+                        
+                    </div>
+    
+            </div>
+
+            <div class="row justify-content-around">
+                        
+                        <div class="col-md-4">
+                            
+                                <div class="foto-3d-shape">
+                                        <div class="foto-3d-shape-img-wrapper">
+                                        <img src="img/pergamin.png">
+                                    </div>
+                                        <div class="foto-3d-caption">
+                                          <h4>Pergamin</h4>
+                                          <p>już od <strong>740,00</strong> zł</p>
+                                        </div>
+                                        <div data-aos="fade-up" data-aos-duration="800" class="foto-3d-shape-add-to-cart-wrapper">
+                                                <button class="btn btn-outline-secondary">Dodaj do koszyka</button>
+                                        </div>
+                                    </div>
+                            
+                        </div>
+
+                        <div class="col-md-4">
+                            
+                                <div class="foto-3d-shape">
+                                        <div class="foto-3d-shape-img-wrapper">
+                                        <img src="img/ksiazka.png">
+                                    </div>
+                                        <div class="foto-3d-caption">
+                                          <h4>Książka</h4>
+                                          <p>już od <strong>740,00</strong> zł</p>
+                                        </div>
+                                        <div data-aos="fade-up" data-aos-duration="800" class="foto-3d-shape-add-to-cart-wrapper">
+                                                <button class="btn btn-outline-secondary">Dodaj do koszyka</button>
+                                        </div>
+                                    </div>
+                            
+                        </div>
+        
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-fluid foto-3d-supports">
+            <div class="container">
+                <div class="row justify-content-center">
+    
+                    <div class="col-12 text-center mb-5">
+                        <h1>Podstawki</h1>
+                        <p class="foto-3d-description text-justify m-auto">
+                            Alternatywna metoda montażu zdjęcia do płyty grobowca.
+                                Fotoceramika „stoi” na płycie pomnika, a zdjęcie wyeksponowane jest pod minimalnym kątem.
+                                Podstawki wykonane są również z ceramiki, więc są odporne na warunki atmosferyczne. 
+                        </p>
+                    </div>
+    
+                </div>
+    
+                <div class="row justify-content-around mb-5">
+    
+                        <div class="col-md-6">
+                                
+                                <div class="foto-3d-shape foto-3d-shape-first">
+                                    <div class="foto-3d-shape-img-wrapper">
+                                        <img src="img/podstawka1.png" />
+                                    </div>
+                                    <div class="foto-3d-caption">
+                                      <h4>Podstawka Trójkąt</h4>
+                                      <p>już od <strong>70,00</strong> zł</p>
+                                    </div>
+
+                                    <div data-aos="fade-down" data-aos-duration="800" class="foto-3d-table">
+                                        <div class="row">
+                                            <div class="col-xs-5">
+                                                <p>Art.</p>
+
+                                                <p>Pm101</p>
+                                                <p>Pm102</p>
+                                                <p>Pm103</p>
+                                                <p>Pm104</p>
+                                                <p>Pm105</p>
+                                                <p>Pb106</p>
+                                            </div>
+
+                                            <div class="col-xs-7 text-center">
+                                                <p>Rozmiar (cm)</p>
+
+                                                <p>8x4</p>
+                                                <p>9x6</p>
+                                                <p>10x8</p>
+                                                <p>12x9</p>
+                                                <p>14x10</p>
+                                                <p>22x17</p>
+                                            </div>
+                                        </div>    
+                                    </div>  
+                                </div>
+                            
+                        </div>
+    
+                        <div class="col-md-6">
+                            
+                                <div class="foto-3d-shape">
+                                        <div class="foto-3d-shape-img-wrapper">
+                                    <img src="img/podstawka2.png">
+                                </div>
+                                    <div class="foto-3d-caption">
+                                      <h4>Podstawka Prostokąt</h4>
+                                      <p>już od <strong>70,00</strong> zł</p>
+                                    </div>
+
+                                    <div data-aos="fade-down" data-aos-duration="800" class="foto-3d-table">
+                                            <div class="row">
+                                                <div class="col-xs-5">
+                                                    <p>Art.</p>
+    
+                                                    <p>Pm107</p>
+                                                    <p>Pm108</p>
+                                                    <p>Pm109</p>
+                                                    <p>Pm104</p>
+                                        
+                                                </div>
+    
+                                                <div class="col-xs-7 text-center">
+                                                    <p>Rozmiar (cm)</p>
+    
+                                                    <p>8x13</p>
+                                                    <p>11x15</p>
+                                                    <p>16x20</p>
+                                                    <p>19x26</p>
+                                         
+                                                </div>
+                                            </div>    
+    
+                                </div>
+                            
+                        </div>
+        
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid foto-3d-reproduction">
+        <div class="container">
+
+                <div class="row justify-content-center mb-5">
+    
+                        <div class="col-12 text-center">
+                            <h1>Reprodukcje</h1>
+                            
+                            <p class="foto-3d-description text-justify m-auto">Często zdjęcia, które otrzymujemy są ostatnimi egzemplarzami. 
+                                Możemy wykonać kopie fotografii (tzw. reprodukcję) po uwczesnym wyretuszowaniu i poprawieniu jakości zdjęcia
+                                Plik cyfrowy dostarczyć na skrzynkę mailową, a zdjęcie na papierze odesłać na wskazany adres.  </p>
+                        </div>
+        
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 text-center">
+                        <div class="foto-3d-reproduction-img-wrapper">
+                        <img data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" src="img/rep1.png">
+                        <img data-aos="fade-down" data-aos-duration="800" data-aos-delay="600" src="img/rep2.png">
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center">
+                            <div class="foto-3d-reproduction-img-wrapper">
+                            <img data-aos="fade-up" data-aos-duration="800" data-aos-delay="200" src="img/rep3.png" class="foto-3d-img-rep">
+                            <img data-aos="fade-down" data-aos-duration="800" data-aos-delay="600" src="img/rep4.png">
+                            </div>
+                        </div>
+                </div>
+
+        </div>
+    </div>
+    <div class="container-fluid foto-3d-video">
+        <div class="container">
+
+            <div class="row justify-content-center">
+    
+                <div class="col-6 text-center">
+                    <h1>Film</h1>
+                    
+                    <p class="text-justify">Opis?</p>
+                </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col text-center">
+
+                <img src="img/rep1.png">
+
+            </div>
+        </div>
+
+        </div>
+    </div>
+
+    <div class="container-fluid foto-3d-order-now">
+        <div class="container">
+            <div class="row justify-content-center order-now--text">
+                <div class="col-8 text-center">
+                    <h1>Zamów teraz</h1>
+                </div>
+            </div>
+            <div class="row justify-content-center order-now--content">
+                <div class="col-md-6  text-center p-3">
+                    <button class="btn btn-white my-auto">
+                        Zamów&nbsp;zdjęcie na&nbsp;krysztale
+                    </button>
+                </div>
+                <div class="col-md-6  text-center my-auto p-3 foto-3d-last">
+                    <a>Zobacz cennik i&nbsp;tabelę rozmiarów</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-wrapper section">
+        <div class="container">
+            <div class="row footer">
+                <div class="col-12 footer-map">
+                    <div class="footer-map-bg">
+                        <img src="./img/location.svg" alt="Ikona pinezka">
+                    </div>
+                </div>
+                <div class="col-12 footer-separator">
+                    <div class="footer-separator-image">
+                        <img src="./img/Sygnet.png" alt="Ikona fotoceramika">
+                        Fotoceramika
+                    </div>
+                    <div class="footer-separator-line"></div>
+                </div>
+                <div class="col-sm-12 col-lg-6 col-xl-3 footer-item">
+                    <div class="footer-item-header">
+                        <span class="footer-item-header-title">O nas</span>
+                        <div class="underline"></div>
+                    </div>
+                    <a href="#">O nas</a>
+                    <a href="#">Mapa strony</a>
+                    <a href="#">Kontakt</a>
+                    <a href="#">Regulamin</a>
+                </div>
+                <div class="col-sm-12 col-lg-6 col-xl-3 footer-item">
+                    <div class="footer-item-header">
+                        <span class="footer-item-header-title">Prywatność</span>
+                        <div class="underline"></div>
+                    </div>
+                    <a href="#">Polityka Prywatności RODO</a>
+                    <a href="#">Polityka Cookies</a>
+                    <a href="#">Dane do przelewu</a>
+                    <a href="#">Procedura zwrotu</a>
+                </div>
+                <div class="col-sm-12 col-lg-6 col-xl-3 footer-item">
+                    <div class="footer-item-header">
+                        <span class="footer-item-header-title">Metody płatności</span>
+                        <div class="underline"></div>
+                    </div>
+                    <img src="./img/paynow.png" alt="Ikona paynow">
+                    <img src="./img/blik.png" alt="Ikona blik">
+                </div>
+                <div class="col-sm-12 col-lg-6 col-xl-3 footer-item">
+                    <div class="footer-item-header">
+                        <span class="footer-item-header-title">Partnerzy logistyczni</span>
+                        <div class="underline"></div>
+                    </div>
+                    <img src="./img/ups.png" alt="Ikona ups">
+                    <img src="./img/inpost.png" alt="Ikona inpost">
+                    <img src="./img/pocztapolska.png" alt="Ikona pocztapolska">
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

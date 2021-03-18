@@ -1,0 +1,1711 @@
+:root {
+    --main-white: #FFFFFF;
+    --main-white-darken: #D5DDE4;
+    --navbar-font-size: 14px;
+    --title-font-size: 45px;
+    --title-small-font-size: 32px;
+    --title-tiny-font-size: 22px;
+    --description-large-font-size: 22px;
+    --description-font-size: 18px;
+    --button-font-size: 14px;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif !important;
+    overflow-x: hidden;
+}
+
+h1
+{
+    font-size: 42pt;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+h4{
+    text-align: center;
+}
+
+h5{
+    font-weight: 600;
+}
+
+p{
+    font-weight: 600;
+    font-size: 10pt;
+}
+li{
+    display: flex;
+    margin-top: 25px;
+    font-size: 12pt;
+    font-weight: 500;
+}
+
+button:focus{
+    outline: none !important;
+}
+
+
+/*Buttons */
+.btn-yellow 
+{
+    color: #ffc107;
+    border-color: #ffc107;
+}
+
+.btn-yellow:hover {
+    color: #212529;
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+
+.btn-yellow:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255,193,7,.5);
+}
+
+.btn-blue 
+{
+    color: #272e70;
+    border-color: #272e70;
+    font-weight: bold;
+}
+
+.btn-blue:hover {
+    color: #fff;
+    background-color: #272e70;
+    border-color: #272e70;
+}
+
+.btn-blue:focus {
+    box-shadow: 0 0 0 0.2rem rgba(7, 106, 255, 0.5) !important;
+}
+
+.btn-white 
+{
+    color: #fff !important;
+    border-color: #fff !important;
+}
+
+.btn-white:hover {
+    color: #272e70 !important;
+    background-color: #ffc107 !important;
+    border-color: #ffc107 !important;
+}
+
+.btn-white:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255,193,7,.5) !important;
+}
+
+.btn-spec{
+    text-decoration: underline;
+}
+.btn-spec:hover{
+    text-decoration: underline;
+}
+
+/* Wszystkie sekcje */
+.container-fluid
+{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.container-fluid:nth-child(2n+1){
+
+    background-color: #f1f2f9;
+    /* padding: 5vh 0 5vh 0; */
+}
+/* .container-fluid:nth-child(n+1){
+
+    padding: 5vh 0 5vh 0;
+} */
+.foto-porcelana-description
+{
+    width: 85%;
+    font-weight: 500 !important;
+    font-size: 11pt;
+    color: #333;
+}
+
+.foto-porcelana-image-half
+{
+    width: 100%;
+    max-width: 350px;
+}
+
+.foto-porcelana-image-left
+{
+    margin-left: 0;
+}
+
+/* MENU */
+
+.navbar-top {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    height: 90px;
+    padding: 25px 100px;
+    background-color: #00123E;
+    font-size: var(--navbar-font-size);
+    z-index: 100;
+}
+
+.navbar-top a, .navbar-top li {
+    color: var(--main-white);
+    text-decoration: none;
+    transition: 0.3s;
+    margin-top: unset;
+    font-size: unset;
+    font-weight: unset;
+}
+
+.navbar-top .navbar-menu a {
+    height: 100%;
+}
+
+.navbar-top .navbar-menu li.nested {
+    padding: 7px 0;
+    line-height: 1;
+    color: #A4ACC2;
+    transition: 0.3s;
+    z-index: 2;
+}
+
+.navbar-top .navbar-menu li.nested:hover {
+    color: white;
+    transition: 0.3s;
+}
+
+.navbar-top .navbar-menu li:not(.nested) {
+    border-bottom: 2px solid transparent;
+}
+
+.navbar-top a:hover, .navbar-top li:not(.nested):not(.product):hover {
+    color: #43C5FF;
+    transition: all 0.3s;
+}
+
+.navbar-top li.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 40px) !important;
+    padding: 0 30px 0 20px;
+    margin: 20px 0 20px 10px;
+    border-radius: 5px;
+    transition: none;
+}
+
+.navbar-top li.product span {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.navbar-top li.product span img {
+    max-height: 12px;
+    width: auto;
+    margin-left: 8px;
+}
+
+.navbar-top .navbar-logo {
+    display: flex;
+    align-items: center;
+    line-height: 1.8;
+    letter-spacing: 0.36px;
+    cursor: pointer;
+    color: var(--main-white-darken);
+    font-size: var(--description-font-size);
+}
+
+.navbar-top .navbar-logo img {
+    max-width: 58px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.navbar-menu-container {
+    display: flex;
+    width: 100%;
+    height: calc(100% + 50px);
+    margin: -25px 0;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.navbar-menu .navbar-menu-item {
+    display: flex;
+    position: relative;
+    align-items: center;
+    height: 100%;
+    padding: 0 30px;
+    letter-spacing: 0.4px;
+    cursor: pointer;
+}
+
+.navbar-menu .navbar-menu-item ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 90%;
+    left: 0;
+    min-width: 230px;
+    height: 0;
+    background: #12245E;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    padding: 7px 20px;
+    list-style-type: none;
+    z-index: 150;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.navbar-login {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar-login-item {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.navbar-login-item img {
+    margin-right: 15px;
+}
+
+.hamburger {
+    display: none;
+    position: fixed;
+    padding: 10px;
+    border: 0;
+    top: 45px;
+    right: 15px;
+    transform: translateY(-50%);
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 110;
+}
+
+.hamburger .hamburger-container span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: var(--main-white);
+    border-radius: 2px;
+    opacity: 1;
+    left: 0;
+    position: absolute;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+
+.hamburger .hamburger-container span:nth-child(1) {
+    top: 5px;
+}
+  
+.hamburger .hamburger-container span:nth-child(2), .hamburger .hamburger-container span:nth-child(3) {
+    top: 13px;
+}
+  
+.hamburger .hamburger-container span:nth-child(4) {
+    top: 21px;
+}
+  
+.hamburger.open .hamburger-container span:nth-child(1) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+}
+  
+.hamburger.open .hamburger-container span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+  
+.hamburger.open .hamburger-container span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+  
+.hamburger.open .hamburger-container span:nth-child(4) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+}
+
+.hamburger-menu-overlay {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #00123E;
+}
+  
+.hamburger-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+
+.hamburger-bars {
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: var(--main-white);
+    transition: transform 220ms ease-in-out;
+}
+
+.hamburger-bars:before, .hamburger-bars:after {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: var(--main-white);
+    content: '';
+}
+
+.hamburger-bars:before {
+    top: -8px;
+    transition: top 100ms 250ms ease-in, transform 220ms ease-in-out;
+}
+
+
+.hamburger-bars:after {
+    bottom: -8px;
+}
+
+/* HEADING */
+.foto-porcelana-heading
+{
+    background-color: #0e2049 !important;
+    padding-top: 6vh;
+    padding-bottom: 6vh;
+    color: #fff;
+    margin-top: 65px;
+}
+
+.foto-porcelana-heading p
+{
+    font-size: 12pt;
+    font-weight: 400 !important;
+    
+}
+
+.foto-porcelana-heading .foto-porcelana-description
+{
+    width: 50%;
+    color: #fff;
+}
+
+
+/* Video */
+
+.foto-porcelana-video img
+{
+    width: 100%;
+}
+
+
+
+/*Zdjęcia nagrobkowe */
+.foto-porcelana-reasons h2
+{
+    font-size: 32pt;
+    font-weight: bold;
+}
+
+.foto-porcelana-reasons h3
+{
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+.foto-porcelana-reasons h4
+{
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+.foto-porcelana-reasons p
+{
+    font-size: 11pt;
+    font-weight: bold;
+}
+
+.foto-porcelana-list li .number
+{
+    height: 25px !important;
+    width: 25px !important;
+    min-height: 25px !important;
+    min-width: 25px !important;
+    text-align: center;
+    background-color: #ffcb0f;
+    border-radius: 50%;
+    margin-right: 10px;
+    box-shadow: 0px 0px 5px 1px #ffcb0f;
+}
+.number{
+    color: #fff;
+    font-size: 14pt;
+}
+
+.btn.btn-download{
+    padding: 0 !important;
+    font-size: 11pt;
+
+}
+.btn-download:hover{
+    font-weight: 600;
+}
+
+
+
+/*Specyfikacja*/
+
+.foto-porcelana-specification .icon-wrapper
+{
+    float: left;
+    width: 16%;
+}
+
+.foto-porcelana-specification .row
+{
+    display: flex !important;
+    display: inline-block;
+}
+
+.foto-porcelana-specification .description
+{
+    float: left;
+    width: 84%;
+    text-align: justify;
+    font-size: 10pt;
+    font-weight: 500;
+}
+
+
+
+/* Ornament */
+
+
+.foto-porcelana-ornament .icon-wrapper
+{
+    float: left;
+    width: 190px;
+    height: 190px;
+    position: relative;
+    clear: both;
+}
+.foto-porcelana-ornament .col-lg-6
+{
+    clear: both;
+}
+.foto-porcelana-ornament .icon
+{
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    position: absolute;
+    right: 15px;
+    margin: 0;
+}
+
+.foto-porcelana-ornament .description {
+
+    text-align: justify;
+    font-size: 10pt;
+}
+
+/* Usługi Cyfrowe */
+
+.foto-porcelana-digital-content
+{
+    width: 48%;
+    background-color: #f1f2f9;
+    float: left;
+    margin: 1%;
+    text-align: center;
+    padding: 40px;
+}
+.foto-porcelana-digital-content h2
+{
+    font-family: 'Pacifico', cursive;
+}
+.foto-porcelana-digital-content h1
+{
+    font-size: 38pt;
+}
+.foto-porcelana-digital-content h1, .foto-porcelana-digital-content p
+{
+    margin: 0;
+    padding: 0;
+}
+
+.foto-porcelana-digital-content p
+{
+    color: rgba(118, 118, 118, 255);
+}
+.foto-porcelana-digital-content:first-child
+{
+    width: 100%;
+}
+
+.foto-porcelana-fill
+{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.foto-porcelana-digital-services
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.foto-porcelana-digital-img-wrapper
+{
+    margin: 0 auto;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foto-porcelana-digital-img-wrapper .foto-porcelana-repo:nth-child(1)
+{
+    position: relative;
+    left: 0;
+    z-index: 4;
+    max-width: 45%;
+    max-height: 90%
+}
+
+.foto-porcelana-digital-img-wrapper .foto-porcelana-repo:nth-child(2)
+{
+    position: relative;
+    left: -20px;
+    z-index: 2;
+    max-width: 50%;
+    max-height: 100%;
+}
+
+/* Dostępne */
+.foto-porcelana-available .row-first{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.foto-porcelana-available .foto-porcelana-description
+{
+    width: 55%;
+}
+
+.slick-prev, .slick-next
+{
+    top: 45%;
+    height: 70px;
+}
+
+
+.foto-porcelana-card-slider
+{
+    width: 30%;
+    margin: 1%;
+    padding: 20px;
+}
+.foto-porcelana-slider
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.foto-porcelana-shape
+{
+    box-shadow: 0px 0px 13px 5px rgba(178, 178, 178, 0.5);
+    border: none !important;
+    height: 250px;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 150px;
+    transition: all .5s ease-in-out;
+}
+
+.foto-porcelana-shape:hover{
+    box-shadow: none;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.foto-porcelana-shape-img-wrapper
+{
+    height: 200px;
+    position: relative;
+}
+
+.foto-porcelana-shape img
+{
+    max-height: 200px;
+    max-width: 70%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.foto-porcelana-caption{
+    background-color: #ffcb0f;
+    position: relative;
+    bottom: 12px;
+    width: 80%;
+    margin: 10px auto !important;
+    padding: 5px;
+    margin-bottom: 0 !important;
+    border-radius: 10px;
+}
+
+.foto-porcelana-caption h4
+{
+    font-size: 18pt;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.foto-porcelana-caption p
+{
+    margin-bottom: 0;
+}
+
+.foto-porcelana-caption strong{
+    font-size: 13pt;
+    margin-bottom: 0;
+}
+
+
+
+.foto-porcelana-shape-add-to-cart-wrapper
+{
+    margin: 10px auto;
+    height: 30px !important;
+}
+
+
+/* Podstawki */
+
+.foto-porcelana-supports .foto-porcelana-shape
+{
+    background-color: #fff;
+    /* margin-left: 20%;
+    margin-right: 20%; */
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 320px;
+}
+
+.foto-porcelana-supports .foto-porcelana-caption
+{
+    z-index: 5;
+    border-top: none;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.foto-porcelana-supports .foto-porcelana-table
+{
+    z-index: 3;
+    position: relative;
+    top: -12px;
+    width: 80%;
+    margin: 0 auto;
+    border-top: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-bottom: 1px;
+}
+
+.foto-porcelana-supports .foto-porcelana-description
+{
+    width: 40%;
+}
+.foto-porcelana-table .row{
+
+    border-top: none;
+    width: 90%;
+    margin-left: 15px;
+
+}
+.foto-porcelana-table .col-5{
+    text-align: left;
+    border: 1px solid #000;
+    border-top: none;
+    border-bottom-left-radius: 20px;
+    float: left;
+
+}
+.foto-porcelana-table .col-7{
+ 
+    float: left;
+    border: 1px solid #000;
+    border-bottom-right-radius: 20px;
+    border-top: none;
+    border-left: none;
+}
+
+
+.foto-porcelana-table p{
+    margin: 3px auto;
+    font-size: 10pt;    
+}
+
+
+
+/* kolorowanie */
+
+
+.foto-porcelana-color h1
+{
+    padding-bottom: 0px;
+}
+
+.foto-porcelana-color h1
+{
+    padding-bottom: 20px;
+}
+.foto-porcelana-color p
+{
+    color: rgba(118, 118, 118, 255);
+}
+.foto-porcelana-color-image
+{
+    display:flex;
+    justify-content: space-around;
+}
+.foto-porcelana-color-image img
+{
+    width: 250px;
+    max-width:100%;
+    max-height: 100%;
+    margin: auto;
+}
+
+.foto-porcelana-color-image-more
+{
+    width: 250px;
+    padding: 20px;
+}
+.foto-porcelana-color .foto-porcelana-description
+{
+    width: 85% !important;
+    margin-left: 0 !important;
+}
+
+
+/* ------ reproduction -------*/
+.foto-porcelana-reproduction-img-wrapper
+{
+    display: inline;
+    margin: 0 auto;
+}
+
+.foto-porcelana-reproduction-img-wrapper img:nth-child(1)
+{
+    position: relative;
+    left: 0;
+    z-index: 4;
+    max-width: 45%;
+}
+
+.foto-porcelana-reproduction-img-wrapper img:nth-child(2)
+{
+    position: relative;
+    left: -50px;
+    z-index: 2;
+    max-width: 50%;
+    max-height: 350px;
+}
+
+
+
+/* Zamów teraz */
+.foto-porcelana-order-now
+{
+    background-color: #2a3251 !important;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.foto-porcelana-order-now .order-now--text {
+    display: flex;
+}
+
+.foto-porcelana-order-now .order-now--text h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.foto-porcelana-order-now h1
+{
+    margin-bottom: 30px;
+}
+
+
+.foto-porcelana-order-now a
+{
+    text-decoration: underline !important;
+}
+
+
+.btn{
+    border-radius: 50px !important;
+    padding: 10px 20px 10px 20px !important;
+}
+
+
+.foto-porcelana-list{
+    list-style:none;
+    padding: 0;
+}
+
+
+.img-1{
+    position: relative;
+    top: 10%;
+}
+.icon{
+    height: 40px;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.foto-porcelana-last{
+    margin-bottom: 15px !important;
+}
+
+/* Podobne produkty */
+
+
+.foto-porcelana-products-slider
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.foto-porcelana-products-slider .foto-porcelana-shape
+{
+    margin-bottom: 40px;
+}
+.foto-porcelana-products-slider .foto-porcelana-caption
+{
+    height: 31%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* FOOTER */
+
+.footer-wrapper {
+    background-color: #00123E;
+}
+
+.footer {
+    transform: translateY(-30px);
+}
+
+.footer .footer-map {
+    display: flex;
+    width: 100%;
+    height: 300px;
+}
+
+.footer .footer-map .footer-map-bg {
+    display: flex;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: url('../img/new/mapa.png') no-repeat center;
+    border-radius: 15px;
+}
+
+.footer .footer-map .footer-map-bg img {
+    height: min-content;
+    width: min-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-45px) translateY(-30px);
+}
+
+.footer .footer-separator {
+    display: flex;
+    align-items: center;
+    margin: 60px 0;
+}
+
+.footer .footer-separator-image {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    padding-right: 60px;
+    background-color: #00123E;
+    font-size: 22px;
+    letter-spacing: 0.36px;
+    color: var(--main-white);
+}
+
+.footer .footer-separator img {
+    margin-right: 15px;
+}
+
+.footer .footer-separator-line {
+    display: flex;
+    position: relative;
+    z-index: 1;
+    height: 2px;
+    width: calc(100% + 30px);
+    margin-left: -15px;
+    margin-right: -15px;
+    background-color: #24367E;
+    opacity: 0.5;
+}
+
+.footer .footer-item-header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+
+.footer .footer-item-header .footer-item-header-title {
+    margin-bottom: 10px;
+    font-size: var(--title-tiny-font-size);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #D5DDE4;
+}
+
+.footer .footer-item-header .underline {
+    display: block;
+    width: 25px;
+    height: 4px;
+    background-color: #43C5FF;
+}
+
+.footer .footer-item {
+    margin: 30px 0;
+}
+
+.footer .footer-item a {
+    display: block;
+    color: #A4ACC2;
+    transition: 0.3s;
+}
+
+.footer .footer-item a:hover {
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+.footer .footer-item img {
+    margin-right: 30px;
+}
+
+/* MEDIA */
+
+@media only screen and (min-width: 576px)
+{
+    .foto-porcelana-available .container
+    {
+        max-width: 476px;
+    }
+}
+
+@media only screen and (min-width: 768px)
+{
+    .foto-porcelana-available .container
+    {
+        max-width: 668px;
+    }
+}
+
+@media only screen and (min-width: 992px)
+{
+    .foto-porcelana-available .container
+    {
+        max-width: 862px;
+    }
+}
+
+@media only screen and (min-width: 1200px)
+{
+    .foto-porcelana-available .container
+    {
+        max-width: 1050px;
+    }
+
+    .navbar-top li:not(.nested):not(.product):hover {
+        border-bottom: 2px solid #43C5FF;
+    }
+
+    .navbar-top li.product:hover {
+        background: #12245E;
+    }
+
+    .navbar-top li.product span img {
+        transition: 0.3s;
+    }
+
+    .navbar-top li.product:hover span img {
+        transform: rotate(-180deg);
+        transition: 0.3s;
+    }
+
+    .navbar-top li.product .submenu-underline {
+        display: flex;
+        width: 80%;
+        height: 2px;
+        position: absolute;
+        bottom: 5px;
+        left: 10%;
+        background-color: #00123E;
+        z-index: 100;
+    }
+
+    .navbar-menu .navbar-menu-item.product:hover ul {
+        height: 142px;
+        opacity: 1;
+        transition: 0.3s;
+    }
+}
+
+@media only screen and (min-width: 1400px)
+{
+    .foto-porcelana-specification .container
+    {
+        max-width: 1340px;
+    }
+    .foto-porcelana-available .container
+    {
+        max-width: 1250px;
+    }
+
+}
+
+@media only screen and (min-width: 1600px)
+{
+    .foto-porcelana-specification .container
+    {
+        max-width: 1540px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .navbar-top {
+        padding: 25px 60px;
+    }
+
+    .navbar-menu-item {
+        padding: 0 20px !important;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .hamburger {
+        display: flex;
+        top: 35px;
+    }
+
+    .navbar-top {
+        height: 70px;
+        z-index: 100;
+    }
+
+    .navbar-top:before {
+        content: '';
+        display: flex;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 50;
+        background-color: #00123E;
+    }
+
+    .navbar-top.open:after {
+        content: '';
+        display: block;
+        height: 1px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: rgba(255,255,255,0.8);
+        z-index: 100;
+    }
+
+    .navbar-top .navbar-login {
+        width: 100%;
+        padding: 0 40px;
+        align-items: flex-start !important;
+    }
+
+    .navbar-top .navbar-logo {
+        position: relative;
+        z-index: 100;
+    }
+
+    .product-submenu {
+        position: unset !important;
+        width: 100%;
+        background: transparent !important;
+    }
+
+    .product-submenu li.nested {
+        text-align: center;
+    }
+
+    .navbar-menu {
+        width: 100%;
+        margin: 0;
+        padding: 10px 40px 0;
+        align-items: flex-start !important;
+    }
+
+    .navbar-menu a, .navbar-menu li {
+        width: 100%;
+    }
+
+    .navbar-menu li {
+        position: relative;
+    }
+
+    .navbar-menu li:not(.nested) {
+        border-radius: 0 !important;
+        padding: 7px 0 !important
+    }
+
+    .navbar-menu li:not(.nested):after {
+        content: '';
+        display: block;
+        height: 1px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: rgba(255,255,255,0.8);
+    }
+
+    .navbar-menu a:last-child li {
+        border-bottom: 0 !important;
+    }
+
+    .navbar-menu-container {
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        height: calc(100vh - 70px) !important;
+        width: 100vw;
+        position: fixed;
+        top: 70px;
+        left: 0;
+        margin: 0 !important;
+        visibility: hidden;        
+        background-color: #00123E;
+        font-size: 17px;
+        transition: 0.4s;
+        transform: translateY(-100vh);
+        z-index: -1;
+    }
+
+    .navbar-menu-container.active {
+        visibility: visible;
+        transition: 0.4s;
+        transform: translateY(0)
+    }
+
+    .navbar-menu-container .navbar-menu {
+        margin-bottom: 20px;
+    }
+
+    .navbar-menu-container .navbar-menu .navbar-menu-item ul {
+        border-top-left-radius: 10px;
+    }
+
+    .navbar-menu-container .navbar-menu .navbar-menu-item.product {
+        margin: 0 !important;
+        align-items: flex-start !important;
+    }
+
+    .navbar-menu-container .navbar-menu .navbar-menu-item.product .product-submenu {
+        display: flex;
+        height: 0;
+        transition: 0.3s;
+        overflow: hidden;
+        opacity: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar-menu-container .navbar-menu .navbar-menu-item.product .product-submenu a:not(:last-child) li.nested:after {
+        content: '';
+        display: block;
+        height: 1px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: rgba(255,255,255,0.8);
+    }
+
+
+    .navbar-menu-container .navbar-menu .navbar-menu-item.product .product-submenu li.nested {
+        text-align: left;
+        color: white !important;
+    }
+
+    .navbar-menu-container .navbar-menu .navbar-menu-item.product.active .product-submenu {
+        height: 142px;
+        transition: 0.3s;
+        opacity: 1;
+        margin-top: 5px;
+        border-radius: 0;
+    }
+
+    .navbar-menu-container .navbar-menu .navbar-menu-item.product.active span img {
+        transform: rotate(-180deg);
+    }
+
+    .navbar-menu-container .navbar-login {
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar-menu-container .navbar-login .navbar-login-item {
+        padding: 10px 0 !important;
+    }
+    
+    .navbar-menu-container .navbar-menu, .navbar-menu-container .navbar-login {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 1199px)
+{
+    .foto-porcelana-list li
+    {
+        margin-top: 10px !important;
+    }
+}
+
+
+@media only screen and (max-width: 1024px)
+{
+    h1
+    {
+        font-size: 32pt !important;
+    }
+    .foto-porcelana-reasons h3
+    {
+        font-size: 12pt !important;
+    }
+    .foto-porcelana-reasons li
+    {
+        font-size: 11pt !important;
+    }
+
+    .foto-porcelana-digital-content, .foto-porcelana-digital-content:first-child
+    {
+        width: 80%;
+        margin: 1% auto;
+    }
+    
+    .navbar-nav .nav-link
+    {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+
+@media only screen and (max-width: 991px)
+{
+    .foto-porcelana-heading .foto-porcelana-description
+    {
+        width: 80%;
+        color: #fff;
+    }
+    
+
+    .foto-porcelana-reasons
+    {
+        text-align: center;
+    }
+
+    .foto-porcelana-reasons .foto-porcelana-list
+    {
+        width: 65%;
+        margin: auto;
+    }
+    
+
+    .foto-porcelana-caption h4
+    {
+        font-size: 2vw;
+    }
+    
+    .foto-porcelana-specification .col-lg-8 h4 
+    {
+        text-align: center !important;
+        padding: 0 !important;
+        margin-left: 0 !important;
+        margin-top: 25px;
+        margin-bottom: 25px !important;
+    }
+    
+    .foto-porcelana-available .foto-porcelana-description, .foto-porcelana-supports .foto-porcelana-description
+    {
+        width: 85%;
+    }
+    
+    .foto-porcelana-specification h3
+    {
+        text-align: center !important;
+        margin-top: 10px;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 768px)
+{
+    h1
+    {
+        text-align: center;
+        font-size: 24pt !important;
+    }
+    h3
+    {
+        text-align: center;
+        font-size: 16pt !important;
+    }
+    h4
+    {
+        text-align: center;
+        font-size: 12pt !important;
+    }
+    .foto-porcelana-image-half
+    {
+        max-width: 60%;
+        margin-bottom: 25px;
+    }
+    .foto-porcelana-reasons .foto-porcelana-list
+    {
+        width: 80%;
+        margin: auto;
+    }
+    .foto-porcelana-list li
+    {
+        font-size: 10pt !important;
+        margin-top: 10px;
+    }
+    .foto-porcelana-list li:before
+    {
+        height: 20px;
+        text-align: center !important;
+    }
+    .container-fluid
+    {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .slick-prev, .slick-next
+    {
+        width: 30px;
+    }
+
+    .slick-next
+    {
+        right: -30px;
+    }
+    .slick-prev
+    {
+        left: -30px;
+    }
+
+    .foto-porcelana-supports .foto-porcelana-shape-first
+    {
+        margin-bottom: 230px !important;
+    }
+    .foto-porcelana-shape
+    {
+        margin-bottom: 90px;
+    }
+    .foto-porcelana-color-img-wrapper
+    {
+        display: block;
+        height: 44vw;
+    }
+    .foto-porcelana-color-img-wrapper img:nth-child(1)
+    {
+        position: absolute;
+        left: 15%;
+        z-index: 4;
+        max-width: 35%;
+        top: 10%;
+    }
+    .foto-porcelana-color-img-wrapper img:nth-child(2)
+    {
+        position: absolute;
+        left: 45%;
+        z-index: 2;
+        max-width: 45%;
+    }
+
+    .foto-porcelana-specification ul{
+        padding: 0;
+    }
+
+    
+    .foto-porcelana-digital-content, .foto-porcelana-digital-content:first-child
+    {
+        width: 100%;
+    }
+
+
+    .foto-porcelana-color .foto-porcelana-description
+    {
+        margin: auto !important;
+    }
+    .foto-porcelana-specification h3
+    {
+        text-align: left !important;
+        margin-top: 0;
+    }
+
+    
+    .foto-porcelana-order-now .order-now--text {
+        position: static;
+        transform: unset;
+    }
+    
+    .foto-porcelana-order-now .order-now--content div {
+        margin-top: unset !important;
+    }
+}
+
+
+@media only screen and (max-width: 575px)
+{
+    :root {        
+        --title-font-size: 34px;
+        --title-small-font-size: 30px;
+        --title-tiny-font-size: 20px;
+        --description-large-font-size: 18px;
+        --description-font-size: 15px;
+        --button-font-size: 13px;
+    }
+
+    .navbar-top {
+        padding: 25px 15px;
+    }
+
+    h1
+    {
+        font-size: 24pt !important;
+    }
+    .foto-porcelana-about h1
+    {
+        font-size: 24pt;
+    }
+    .btn
+    {
+        font-size: 10pt !important;
+    }
+    .foto-porcelana-description
+    {
+        font-size: 9pt !important;
+    }
+    .foto-porcelana-supports .foto-porcelana-shape 
+    {
+        width: 270px;
+    }
+
+    .foto-porcelana-video img{
+        width: 80%;
+    }
+
+    .foto-porcelana-table p
+    {
+        font-size: 8pt;
+    }
+
+    .slick-prev, .slick-next
+    {
+        width: 25px;
+    }
+
+    .slick-next
+    {
+        right: -25px;
+    }
+    .slick-prev
+    {
+        left: -25px;
+    }
+
+    .foto-porcelana-image-half
+    {
+        max-width: 50%;
+    }
+
+    .foto-porcelana-color-img-wrapper img:nth-child(1)
+    {
+        max-width: 45%;
+        left: 10%;
+    }
+
+
+    .foto-porcelana-ornament .col-lg-6
+    {
+        margin-bottom: 15px !important;
+    }
+
+    .foto-porcelana-reasons h2
+    {
+        font-size: 7vw;
+    }
+    .foto-porcelana-reasons h3
+    {
+        font-size: 3vw !important;
+    }
+    
+}
+
+@media only screen and (max-width: 426px){
+
+
+    .foto-porcelana-ornament .icon-wrapper
+    {
+        width: 120px;
+    }
+    .foto-porcelana-reasons .foto-porcelana-list
+    {
+        width: 100%;
+    }
+    .foto-porcelana-list li
+    {
+        font-size: 9pt !important;
+        text-align: left;
+    }
+    .btn
+    {
+        font-size: 9pt !important;
+        margin: auto;
+        padding: 10px !important;
+    }
+    .foto-porcelana-digital-content:first-child p
+    {
+        font-size: 8pt;
+    }
+
+}
+
+
+@media only screen and (max-width: 320px){
+
+    h1{
+        font-size: 20pt !important; 
+    } 
+
+    .foto-porcelana-scroll{
+        justify-content: left;
+    }
+
+
+    .foto-porcelana-about h1 {
+        font-size: 20pt !important;
+    }
+    .foto-porcelana-about p{
+        width: 100% !important;
+    }
+
+    .foto-porcelana-image-half
+    {
+        max-width: 70%;
+    }
+    .img-1{
+        top: 0;
+    }
+    .foto-porcelana-specification ul{
+        padding: 0;
+    }
+
+
+    .foto-porcelana-video img{
+        width: 100%;
+    }
+
+
+
+    .foto-porcelana-ornament .icon-wrapper {
+        width: 75px;
+    }
+
+
+}
+
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.7s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.row:before, .row:after{display:inline-block !important;}

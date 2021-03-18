@@ -1,0 +1,236 @@
+html {
+    overflow-x: hidden !important;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif !important;
+    overflow-x: hidden;
+    font-weight: 200 !important;
+}
+
+.baner {
+    background-color: #04163e !important;
+}
+
+.container-fluid.gora {
+    padding-top: 0 !important;
+    padding: initial;
+
+    background-color: #04163e !important;
+    color: #fff;
+    height: 90px;
+}
+
+/*.container-fluid:nth-child(2n+1) {*/
+/*    background-color: #f1f2f9 !important;*/
+/*}*/
+
+/*.container-fluid {*/
+/*    background-color: #fff !important;*/
+/*    padding-top: 30px !important;*/
+/*}*/
+
+
+.gora a {
+    color: #fff;
+    font-size: 13px;
+    text-transform: lowercase;
+}
+
+.gora img {
+    padding-right: 6px;
+}
+
+.navbar.menu {
+    background-color: red;
+    margin-bottom: 0;
+
+    border-top: 1px solid #38457d;
+    background-color: #162a54;
+    border-radius: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline;
+    margin-top: auto;
+    font-size: 13px;
+}
+
+.menu li a {
+    color: #ffffff !important;
+}
+
+.navbar-nav > li > a {
+    font-size: 10pt !important;;
+}
+
+.menu li.active a {
+    border-bottom: 1px solid #3ABFE8;
+    margin-top: -1px;
+
+}
+
+.menu li:hover a {
+    background-color: #3ABFE8 !important;
+}
+
+.menu a {
+    color: #FFFFFF !important;
+    font-size: 10pt !important;;
+}
+
+.menu a.active {
+    border-bottom: 3px solid #3ABFE8
+}
+
+.foto-3d-heading {
+    padding-top: 2vh !important;
+}
+
+.container-fluid.gora:nth-child(2n+2) {
+    background-color: #04163e !important;
+}
+
+#modalLogin {
+    font-size: 12px !important;
+}
+
+#modalLogin .btn, .szybkie-info .btn {
+    border-radius: 4px !important;
+    padding: 6px 12px !important;
+    background-color: #04163E !important;
+    border: none;
+    font-size: 12px;
+}
+
+#modalLogin .form-control {
+    font-size: 12px;
+}
+
+#modalLogin .lbl-zapamietaj {
+    margin-left: 20px;
+}
+
+.foto-3d-order-now.dol a {
+    text-decoration: none !important;
+}
+
+.foto-3d-how-its-made {
+    padding-top: 2vh !important;
+    min-height: 600px;
+}
+
+.stopka-menu {
+    background-color: #031634;
+    padding: 10px 0 !important;
+    font-size: 1em;
+}
+
+.stopka-menu a {
+    color: #646a8e !important;
+    padding: 0;
+    white-space: nowrap;
+}
+
+.stopka-menu a span {
+    display: inline-block;
+    color: #3fdbff !important;
+    padding: 0 10px;
+    white-space: nowrap;
+}
+
+.stopka-menu .nav.navbar-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.stopka-menu .navbar-nav {
+    float: none;
+}
+
+.stopka-menu .navbar-default {
+    background: none;
+}
+
+.stopka-menu .navbar {
+    border: none;
+    margin-bottom: 0;
+}
+
+.stopka-menu .navbar-default .navbar-nav > .active > a {
+    background: none;
+}
+
+.stopka-menu li {
+    margin: 5px 0 !important;
+}
+
+.szybkie-info {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    background-color: #031634 !important;
+    color: #ffffff;
+    font-size: 1em;
+}
+
+.szybkie-info .row {
+    line-height: 40px;
+}
+
+.szybkie-info .naglowek {
+    line-height: normal;
+    color: #3fdbff;
+    text-transform: uppercase;
+    border-left: 2px solid #3fdbff;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.szybkie-info .btn {
+    background: none;
+    border: 1px solid #3fdbff !important;
+    border-radius: 0rem;
+}
+
+.szybkie-info a {
+    color: #3fdbff;
+    font-size: 1.1em;
+}
+
+.szybkie-info .kontakt span {
+    color: #3fdbff;
+    display: inline-block;
+    min-width: 40px;
+}
+
+.szybkie-info .kontakt a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.szybkie-info .copyright {
+    font-size: 0.8em;
+    line-height: normal;
+}
+
+.col-xs-5 {
+    width: 40.66666667% !important;
+}
+
+.col-xs-7 {
+    width: 58.33333333% !important;
+}
+
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+    float: left;
+}
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}

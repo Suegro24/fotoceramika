@@ -1470,6 +1470,19 @@ button:focus {
 
 }
 
+@media only screen and (max-width: 490px) {
+    .foto-krysztal-heading-col:first-child h2 {
+        font-size: 22pt;
+    }
+}
+
+@media only screen and (max-width: 448px) {
+    .foto-krysztal-heading-col:first-child p {
+        width: 100%;
+        text-align: center !important;
+    }
+}
+
 @media only screen and (max-width: 424px) {
     .foto-krysztal-heading-col:first-child p {
         width: 85%;

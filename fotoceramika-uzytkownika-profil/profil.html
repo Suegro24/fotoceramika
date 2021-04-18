@@ -1,0 +1,1103 @@
+
+<!DOCTYPE html>
+<html lang='pl'>
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-TRW4PG4');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="csrf-param" content="_csrf">
+<meta name="csrf-token" content="KdxswXEaUtKRSWMnIRSC8b78ktptaVWiEuG4mLsaPTh6uC-pOngBqtkqEB5pR9u86ojijgg8G-1ml4v57EoQbQ==">
+    <title>Edycja konta</title>
+    <link href="/assets/d4654e4b/css/bootstrap.css" rel="stylesheet">
+<link href="/assets/b35d19d8/css/checkbox-x.min.css" rel="stylesheet">
+<link href="/assets/f2a7af74/css/kv-widgets.min.css" rel="stylesheet">
+<link href="/assets/cf5deb09/css/select2.min.css" rel="stylesheet">
+<link href="/assets/2e39dae7/css/select2-addl.min.css" rel="stylesheet">
+<link href="/assets/2e39dae7/css/select2-krajee.min.css" rel="stylesheet">
+<link href="/css/site.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Pacifico&amp;display=swap" rel="stylesheet">
+<link href="/css/toastr.css" rel="stylesheet">
+<link href="/css/fontawesome-all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<link href="/assets/f3d530fd/toastr.min.css" rel="stylesheet">
+<script async src="js/all.min.js"></script>
+<script>window.checkboxX_18e15574 = {"threeState":false};
+
+var inputmask_1513daaf = {"mask":"9"};
+var s2options_d6851687 = {"themeCss":".select2-container--krajee","sizeCss":"","doReset":true,"doToggle":false,"doOrder":false};
+window.select2_418a444d = {"allowClear":true,"theme":"krajee","width":"100%","placeholder":"Kraj","language":"pl"};
+</script>    <link rel='icon' type='image/x-icon' href='/img/favicon.ico'/>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154117113-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-154117113-1');
+    </script>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TRW4PG4" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header class="header">
+    <button class="hamburger"> 
+        <span class="hamburger-container"> 
+            <span></span> 
+            <span></span> 
+            <span></span> 
+            <span></span> 
+        </span> 
+    </button>
+    <nav class="navbar-top">
+        <a class="navbar-logo" href="#">
+        <img src="./img/Sygnet.png" class="d-inline-block align-top" alt="Logo">
+        FotoCeramika
+        </a>
+        <div class="navbar-menu-container">
+            <ul class="navbar-menu">
+                <a href=""><li class="navbar-menu-item">Główna</li></a>
+                <li class="navbar-menu-item product"><span>Produkty<img src="./img/down-arrow.svg" alt="Ikona strzałka dół"></span><div class="submenu-underline"></div>
+                    <ul class="product-submenu">
+                        <a href=""><li class="nested">Zdjęcia na porcelanie</li></a>
+                        <a href=""><li class="nested">Zdjęcia na porcelanie 3D</li></a>
+                        <a href=""><li class="nested">Zdjęcia na krysztale</li></a>
+                        <a href=""><li class="nested">Kryształ LASER 2.5D</li></a>
+                    </ul>
+                </li>
+                <a href=""><li class="navbar-menu-item">Oferta</li></a>
+                <a href=""><li class="navbar-menu-item">Cennik</li></a>
+                <a href=""><li class="navbar-menu-item">Kontakt</li></a>
+            </ul>
+            <div class="navbar-login">
+                <a class="navbar-login-item" href="#">
+                    <img src="./img/zamowienie.svg" alt="Ikona zamówienia">
+                    Złóż zamówienie
+                </a>
+                <a class="navbar-login-item" href="#">
+                    <img src="./img/profil.png" alt="Ikona zamówienia">
+                    Moje konto
+                </a>
+                <a class="navbar-login-item" href="#">
+                    <img src="./img/profil.png" alt="Ikona logowania">
+                    Wyloguj
+                </a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+<div class='container strona'>
+    <h3 class='text-center'>Poświęć chwilę na uzupełnienie danych swojego profilu</h3>
+    <div class='text-center'>Składanie zamówień będzie możliwe po prawidłowym zapisaniu danych poniższego formularza
+    </div>
+
+    <div class='col-md-12'>
+        <div class='rejestracja'>
+            <form id="w0" action="/uzytkownik/profil/edycja" method="post">
+<input type="hidden" name="_csrf" value="KdxswXEaUtKRSWMnIRSC8b78ktptaVWiEuG4mLsaPTh6uC-pOngBqtkqEB5pR9u86ojijgg8G-1ml4v57EoQbQ==">
+            <div class="error-summary" style="display:none"><p>Proszę poprawić następujące błędy:</p><ul></ul></div>            <div class="error-summary" style="display:none">Proszę poprawić następujące błędy w danych do wysyłki:<ul></ul></div>            
+            <div class='panel panel-default'>
+                <div class='panel-heading'><em class='fa fa-user'></em> Dane konta</div>
+                <div class='panel-body'>
+                    <div class='row'>
+                        <div class='col-sm-4'>
+                            <div class="form-group field-uzytkownik-email required">
+
+<p class="form-control-static">marciu199@gmail.com</p>
+
+<p class="help-block help-block-error"></p>
+</div>                        </div>
+                        <div class='col-sm-4'><div class="form-group field-imie required">
+
+<input type="text" id="imie" class="form-control" name="Uzytkownik[imie]" value="Dominik" maxlength="50" placeholder="Imię" aria-required="true">
+
+<p class="help-block help-block-error"></p>
+</div></div>
+                        <div class='col-sm-4'><div class="form-group field-nazwisko required">
+
+<input type="text" id="nazwisko" class="form-control" name="Uzytkownik[nazwisko]" value="Puchała" maxlength="50" placeholder="Nazwisko" aria-required="true">
+
+<p class="help-block help-block-error"></p>
+</div></div>
+                    </div>
+
+                    <div class='row'>
+
+                        <div class='col-sm-4'>
+                            <div class="form-group field-telefon_kom">
+
+<input type="text" id="telefon_kom" class="form-control" name="Uzytkownik[telefon_kom]" maxlength="20" placeholder="Telefon komórkowy">
+
+<p class="help-block help-block-error"></p>
+</div>                        </div>
+                        <div class='col-sm-4'>
+                            <div class="form-group field-uzytkownik-telefon">
+
+<input type="text" id="uzytkownik-telefon" class="form-control" name="Uzytkownik[telefon]" maxlength="20" placeholder="Telefon">
+
+<p class="help-block help-block-error"></p>
+</div>                        </div>
+                    </div>
+
+                    <div class='row'>
+                        <div class='col-xs-12'>
+                            <div class="form-group field-uzytkownik-newsletter">
+
+<input type="text" id="uzytkownik-newsletter" class="form-control cbx-loading" name="Uzytkownik[newsletter]" data-krajee-checkboxX="checkboxX_18e15574"><label class="cbx-label" for="uzytkownik-newsletter">Subskrypcja newsletter</label>
+
+<p class="help-block help-block-error"></p>
+</div>                        </div>
+                        <div class='col-xs-12'>
+                            <div class="form-group field-uzytkownik-sms">
+
+<input type="text" id="uzytkownik-sms" class="form-control cbx-loading" name="Uzytkownik[sms]" data-krajee-checkboxX="checkboxX_18e15574"><label class="cbx-label" for="uzytkownik-sms">Powiadomienie SMS</label>
+
+<p class="help-block help-block-error"></p>
+</div>                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class='panel panel-default'>
+                <div class='panel-body'>
+                    <div class='row pt10'>
+                        <div class='col-md-4 col-md-offset-1'>
+                            <button type="button" class="btn btn-block btn-primary btn-rodzaj-klienta btn-rodzaj-klienta-firma" rodzaj="1">KONTO FIRMOWE</button>                            <p class='text-center pt5'>Dla firm, które zamierzają sprzedawać w ramach prowadzonej
+                                działalności
+                                gospodarczej</p>
+                        </div>
+                        <div class='col-md-4 col-md-offset-2'>
+                            <button type="button" class="btn btn-block btn-primary btn-rodzaj-klienta btn-rodzaj-klienta-indywid" rodzaj="0">KONTO ZWYKŁE</button>                            <p class='text-center pt5'>Zamówienie indywidualne/jednorazowe</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class='row equal adresy' style='display: none; margin-bottom: 20px;'>
+                <div class='col-md-6 adres wysylka'>
+                    <div class='panel panel-default'>
+                        <div class='panel-heading'><em class='fa fa-envelope'></em> Dane do wysyłki</div>
+                        <div class='panel-body'>
+                            
+<div class='firma_nazwa' style='display: none'>
+    <div class="form-group field-nazwa_wysylka">
+
+<input type="text" id="nazwa_wysylka" class="form-control" name="UzytkownikAdres[wysylka][nazwa]" maxlength="250" placeholder="Nazwa firmy">
+
+<p class="help-block help-block-error"></p>
+</div></div>
+
+    <div class='row imie_nazwisko' style='display: none'>
+        <div class='col-md-6'>
+            <div class="form-group field-imie_wysylka">
+
+<input type="text" id="imie_wysylka" class="form-control" name="UzytkownikAdres[wysylka][imie]" maxlength="50" placeholder="Imię">
+
+<p class="help-block help-block-error"></p>
+</div>        </div>
+        <div class='col-md-6'>
+            <div class="form-group field-nazwisko_wysylka">
+
+<input type="text" id="nazwisko_wysylka" class="form-control" name="UzytkownikAdres[wysylka][nazwisko]" maxlength="50" placeholder="Nazwisko">
+
+<p class="help-block help-block-error"></p>
+</div>        </div>
+    </div>
+
+<div class='row'>
+    <div class='col-md-6'>
+        <div class="form-group field-ulica_wysylka required">
+
+<input type="text" id="ulica_wysylka" class="form-control" name="UzytkownikAdres[wysylka][ulica]" maxlength="50" placeholder="Ulica">
+
+<p class="help-block help-block-error"></p>
+</div>    </div>
+    <div class='col-md-3'>
+        <div class="form-group field-nr_dom_wysylka required">
+
+<input type="text" id="nr_dom_wysylka" class="form-control" name="UzytkownikAdres[wysylka][nr_dom]" maxlength="20" placeholder="Nr domu">
+
+<p class="help-block help-block-error"></p>
+</div>    </div>
+    <div class='col-md-3'>
+        <div class="form-group field-nr_lokal_wysylka">
+
+<input type="text" id="nr_lokal_wysylka" class="form-control" name="UzytkownikAdres[wysylka][nr_lokal]" maxlength="20" placeholder="Nr lokalu">
+
+<p class="help-block help-block-error"></p>
+</div>    </div>
+</div>
+
+<div class='row'>
+    <div class='col-md-4'>
+        <div class="form-group field-kod_pocztowy_wysylka required">
+
+<input type="text" id="kod_pocztowy_wysylka" class="form-control" name="UzytkownikAdres[wysylka][kod_pocztowy]" maxlength="20" placeholder="Kod pocztowy">
+
+<p class="help-block help-block-error"></p>
+</div>    </div>
+    <div class='col-md-8'>
+        <div class="form-group field-miejscowosc_wysylka required">
+
+<input type="text" id="miejscowosc_wysylka" class="form-control" name="UzytkownikAdres[wysylka][miejscowosc]" maxlength="50" placeholder="Miejscowość">
+
+<p class="help-block help-block-error"></p>
+</div>    </div>
+</div>
+
+<div class='row'>
+    <div class='col-md-6'>
+        <div class="form-group field-kraj_wysylka required">
+
+<div class="kv-plugin-loading loading-kraj_wysylka">&nbsp;</div><select id="kraj_wysylka" class="form-control" name="UzytkownikAdres[wysylka][kraj]" data-s2-options="s2options_d6851687" data-krajee-select2="select2_418a444d" style="width: 1px; height: 1px; visibility: hidden;">
+<option value="">Kraj</option>
+<option value="AD">Andora</option>
+<option value="AE">Zjedn.Emiraty Arabskie</option>
+<option value="AF">Afganistan</option>
+<option value="AG">Antigua i Barbuda</option>
+<option value="AI">Anguilla</option>
+<option value="AL">Albania</option>
+<option value="AM">Armenia</option>
+<option value="AN">Antyle Holenderskie</option>
+<option value="AO">Angola</option>
+<option value="AQ">Antarktyda</option>
+<option value="AR">Argentyna</option>
+<option value="AS">Samoa Amerykańskie</option>
+<option value="AT">Austria</option>
+<option value="AU">Australia</option>
+<option value="AW">Aruba</option>
+<option value="AZ">Azerbejdżan</option>
+<option value="BA">Bośnia i Hercegowina</option>
+<option value="BB">Barbados</option>
+<option value="BD">Bangladesz</option>
+<option value="BE">Belgia</option>
+<option value="BF">Burkina Faso</option>
+<option value="BG">Bułgaria</option>
+<option value="BH">Bahrajn</option>
+<option value="BI">Burundi</option>
+<option value="BJ">Benin</option>
+<option value="BM">Bermudy</option>
+<option value="BN">Brunei Darussalam</option>
+<option value="BO">Boliwia</option>
+<option value="BR">Brazylia</option>
+<option value="BS">Bahamy</option>
+<option value="BT">Bhutan</option>
+<option value="BV">Wyspa Bouveta</option>
+<option value="BW">Botswana</option>
+<option value="BY">Białoruś</option>
+<option value="BZ">Belize</option>
+<option value="CA">Kanada</option>
+<option value="CC">Wyspy Kokosowe (Keelinga)</option>
+<option value="CD">Kongo, Republika Demokratyczna</option>
+<option value="CF">Rep.Środkowoafryańska</option>
+<option value="CG">Kongo</option>
+<option value="CH">Szwajcaria</option>
+<option value="CI">Wyb.Kości Słoniowej</option>
+<option value="CK">Wyspy Cooka</option>
+<option value="CL">Chile</option>
+<option value="CM">Kamerun</option>
+<option value="CN">Chiny</option>
+<option value="CO">Kolumbia</option>
+<option value="CR">Kostaryka</option>
+<option value="CU">Kuba</option>
+<option value="CV">Zielony Przylądek</option>
+<option value="CX">Wyspa Bożego Narodzenia</option>
+<option value="CY">Cypr</option>
+<option value="CZ">Republika Czeska</option>
+<option value="DE">Niemcy</option>
+<option value="DJ">Dżibuti</option>
+<option value="DK">Dania</option>
+<option value="DM">Dominika</option>
+<option value="DO">Dominikana</option>
+<option value="DZ">Algieria</option>
+<option value="EC">Ekwador</option>
+<option value="EE">Estonia</option>
+<option value="EG">Egipt</option>
+<option value="ER">Erytrea</option>
+<option value="ES">Hiszpania</option>
+<option value="ET">Etiopia</option>
+<option value="FI">Finlandia</option>
+<option value="FJ">Fidżi Republika</option>
+<option value="FK">Falklandy</option>
+<option value="FM">Mikronezja</option>
+<option value="FO">Wyspy Owcze</option>
+<option value="FR">Francja</option>
+<option value="GA">Gabon</option>
+<option value="GB">Wielka Brytania</option>
+<option value="GD">Grenada</option>
+<option value="GE">Gruzja</option>
+<option value="GH">Ghana</option>
+<option value="GI">Gibraltar</option>
+<option value="GL">Grenlandia</option>
+<option value="GM">Gambia</option>
+<option value="GN">Gwinea</option>
+<option value="GQ">Gwinea Równikowa</option>
+<option value="GR">Grecja</option>
+<option value="GS">Południowa Georgia i Południowe Wyspy Sandwich</option>
+<option value="GT">Gwatemala</option>
+<option value="GU">Guam</option>
+<option value="GW">Gwinea-Bissau</option>
+<option value="GY">Gujana</option>
+<option value="HK">Hongkong</option>
+<option value="HM">Wyspy Heard i McDonald</option>
+<option value="HN">Honduras</option>
+<option value="HR">Chorwacja</option>
+<option value="HT">Haiti</option>
+<option value="HU">Węgry</option>
+<option value="ID">Indonezja</option>
+<option value="IE">Irlandia</option>
+<option value="IL">Izrael</option>
+<option value="IN">Indie</option>
+<option value="IO">Brytyjskie Terytorium Oceanu Indyjskiego</option>
+<option value="IQ">Irak</option>
+<option value="IR">Iran</option>
+<option value="IS">Islandia</option>
+<option value="IT">Włochy</option>
+<option value="JM">Jamajka</option>
+<option value="JO">Jordania</option>
+<option value="JP">Japonia</option>
+<option value="KE">Kenia</option>
+<option value="KG">Kirgistan</option>
+<option value="KH">Kambodża</option>
+<option value="KI">Kiribati</option>
+<option value="KM">Komory</option>
+<option value="KN">St.Kitts i Nevis</option>
+<option value="KP">Koreańska Republika Ludowo-Demokratyczna</option>
+<option value="KR">Republika Korei</option>
+<option value="KW">Kuwejt</option>
+<option value="KY">Kajmany</option>
+<option value="KZ">Kazachstan</option>
+<option value="LA">Laos</option>
+<option value="LB">Liban</option>
+<option value="LC">St.Lucia</option>
+<option value="LI">Liechtenstein</option>
+<option value="LK">Sri Lanka</option>
+<option value="LR">Liberia</option>
+<option value="LS">Lesotho</option>
+<option value="LT">Litwa</option>
+<option value="LU">Luksemburg</option>
+<option value="LV">Łotwa</option>
+<option value="LY">Libia</option>
+<option value="MA">Maroko</option>
+<option value="MD">Mołdowa</option>
+<option value="ME">Czarnogóra</option>
+<option value="MG">Madagaskar</option>
+<option value="MH">Wyspy Marshalla</option>
+<option value="MK">Macedonia</option>
+<option value="ML">Mali</option>
+<option value="MM">Myanmar (Burma)</option>
+<option value="MN">Mongolia</option>
+<option value="MO">Makau</option>
+<option value="MP">Mariany Północne</option>
+<option value="MR">Mauretania</option>
+<option value="MS">Montserrat</option>
+<option value="MT">Malta</option>
+<option value="MU">Mauritius</option>
+<option value="MV">Malediwy</option>
+<option value="MW">Malawi</option>
+<option value="MX">Meksyk</option>
+<option value="MY">Malezja</option>
+<option value="MZ">Mozambik</option>
+<option value="NA">Namibia</option>
+<option value="NC">Nowa Kaledonia</option>
+<option value="NE">Niger</option>
+<option value="NF">Norfolk</option>
+<option value="NG">Nigeria</option>
+<option value="NI">Nikaragua</option>
+<option value="NL">Niderlandy</option>
+<option value="NO">Norwegia</option>
+<option value="NP">Nepal</option>
+<option value="NR">Nauru</option>
+<option value="NU">Niue</option>
+<option value="NZ">Nowa Zelandia</option>
+<option value="OM">Oman</option>
+<option value="PA">Panama</option>
+<option value="PE">Peru</option>
+<option value="PF">Polinezja Francuska</option>
+<option value="PG">Papua Nowa Gwinea</option>
+<option value="PH">Filipiny</option>
+<option value="PK">Pakistan</option>
+<option value="PL" selected>Polska</option>
+<option value="PM">St. Pierre i Miquelon</option>
+<option value="PN">Pitcairn</option>
+<option value="PS">Okupowane Terytorium Palestyny</option>
+<option value="PT">Portugalia</option>
+<option value="PW">Palau</option>
+<option value="PY">Paragwaj</option>
+<option value="QA">Katar</option>
+<option value="QR">Zapasy i zaopatrzenie statków w ramach handlu wewn</option>
+<option value="QV">Kraje i terytoria niewyszczególnione w ramach hand</option>
+<option value="RO">Rumunia</option>
+<option value="RU">Rosja</option>
+<option value="RW">Rwanda</option>
+<option value="SA">Arabia Saudyjska</option>
+<option value="SB">Wyspy Salomona</option>
+<option value="SC">Seszele</option>
+<option value="SD">Sudan</option>
+<option value="SE">Szwecja</option>
+<option value="SG">Singapur</option>
+<option value="SH">Święta Helena</option>
+<option value="SI">Słowenia</option>
+<option value="SK">Słowacja</option>
+<option value="SL">Sierra Leone</option>
+<option value="SM">San Marino</option>
+<option value="SN">Senegal</option>
+<option value="SO">Somalia</option>
+<option value="SR">Surinam</option>
+<option value="ST">Wyspy Św.Tomasza i Książęca</option>
+<option value="SV">Salwador</option>
+<option value="SY">Syria</option>
+<option value="SZ">Suazi</option>
+<option value="TC">Wyspy Turks i Caicos</option>
+<option value="TD">Czad</option>
+<option value="TF">Francuskie Terytorium Południowe</option>
+<option value="TG">Togo</option>
+<option value="TH">Tajlandia</option>
+<option value="TJ">Tadżykistan</option>
+<option value="TK">Tokelau</option>
+<option value="TL">Wschodni Tirom</option>
+<option value="TM">Turkmenistan</option>
+<option value="TN">Tunezja</option>
+<option value="TO">Tonga</option>
+<option value="TR">Turcja</option>
+<option value="TT">Trynidad i Tobago</option>
+<option value="TV">Tuvalu</option>
+<option value="TW">Tajwan</option>
+<option value="TZ">Tanzania</option>
+<option value="UA">Ukraina</option>
+<option value="UG">Uganda</option>
+<option value="UM">Minor (Powiernicze Wyspy Pacyfiku Stanów Zjednoczo</option>
+<option value="US">Stany Zjedn. Ameryki</option>
+<option value="UY">Urugwaj</option>
+<option value="UZ">Uzbekistan</option>
+<option value="VA">Watykan</option>
+<option value="VC">St.Vincent i Grenadyny</option>
+<option value="VE">Wenezuela</option>
+<option value="VG">Wyspy Dziewicze-W.B</option>
+<option value="VI">Wyspy Dziewicze-USA</option>
+<option value="VN">Wietnam</option>
+<option value="VU">Vanuatu</option>
+<option value="WF">Wallis i Futuna</option>
+<option value="WS">Samoa</option>
+<option value="XC">Ceuta</option>
+<option value="XK">Kosowo</option>
+<option value="XL">Melilla</option>
+<option value="XS">Serbia</option>
+<option value="YE">Jemen</option>
+<option value="YT">Majotta</option>
+<option value="ZA">Rep.Połud.Afryki</option>
+<option value="ZM">Zambia</option>
+<option value="ZW">Zimbabwe</option>
+</select>
+
+<p class="help-block help-block-error"></p>
+</div>    </div>
+    </div>
+<input type="hidden" id="uzytkownikadres-wysylka-adres_nazwa" name="UzytkownikAdres[wysylka][adres_nazwa]" value="Adres do wysyłki">
+                        </div>
+                    </div>
+                </div>
+                <div class='col-md-6 adres faktura'>
+                    <div class='panel panel-default'>
+                        <div class='panel-heading'><em class='fa fa-envelope'></em> Dane do
+                            faktury <a class="btn-przepisz" href="#"><em class="fa fa-arrow-right"></em> przepisz z danych do korespondencji</a></div>
+                        <div class='panel-body'>
+                                <input type="hidden" name="Uzytkownik[firma]" value="">
+<div class='firma_nazwa' style='display: none'>
+    <div class="form-group field-nazwa_faktura">
+
+<input type="text" id="nazwa_faktura" class="form-control" name="UzytkownikAdres[faktura][nazwa]" maxlength="250" placeholder="Nazwa firmy">
+
+<p class="help-block help-block-error"></p>
+</div></div>
+
+
+<div class='row'>
+    <div class='col-md-6'>
+        <div class="form-group field-ulica_faktura required">
+
+<input type="text" id="ulica_faktura" class="form-control" name="UzytkownikAdres[faktura][ulica]" maxlength="50" placeholder="Ulica">
+
+<p class="help-block help-block-error"></p>
+</div>    </div>
+    <div class='col-md-3'>
+        <div class="form-group field-nr_dom_faktura required">
+
+<input type="text" id="nr_dom_faktura" class="form-control" name="UzytkownikAdres[faktura][nr_dom]" maxlength="20" placeholder="Nr domu">
+
+<p class="help-block help-block-error"></p>
+</div>    </div>
+    <div class='col-md-3'>
+        <div class="form-group field-nr_lokal_faktura">
+
+<input type="text" id="nr_lokal_faktura" class="form-control" name="UzytkownikAdres[faktura][nr_lokal]" maxlength="20" placeholder="Nr lokalu">
+
+<p class="help-block help-block-error"></p>
+</div>    </div>
+</div>
+
+<div class='row'>
+    <div class='col-md-4'>
+        <div class="form-group field-kod_pocztowy_faktura required">
+
+<input type="text" id="kod_pocztowy_faktura" class="form-control" name="UzytkownikAdres[faktura][kod_pocztowy]" maxlength="20" placeholder="Kod pocztowy">
+
+<p class="help-block help-block-error"></p>
+</div>    </div>
+    <div class='col-md-8'>
+        <div class="form-group field-miejscowosc_faktura required">
+
+<input type="text" id="miejscowosc_faktura" class="form-control" name="UzytkownikAdres[faktura][miejscowosc]" maxlength="50" placeholder="Miejscowość">
+
+<p class="help-block help-block-error"></p>
+</div>    </div>
+</div>
+
+<div class='row'>
+    <div class='col-md-6'>
+        <div class="form-group field-kraj_faktura required">
+
+<div class="kv-plugin-loading loading-kraj_faktura">&nbsp;</div><select id="kraj_faktura" class="form-control" name="UzytkownikAdres[faktura][kraj]" data-s2-options="s2options_d6851687" data-krajee-select2="select2_418a444d" style="width: 1px; height: 1px; visibility: hidden;">
+<option value="">Kraj</option>
+<option value="AD">Andora</option>
+<option value="AE">Zjedn.Emiraty Arabskie</option>
+<option value="AF">Afganistan</option>
+<option value="AG">Antigua i Barbuda</option>
+<option value="AI">Anguilla</option>
+<option value="AL">Albania</option>
+<option value="AM">Armenia</option>
+<option value="AN">Antyle Holenderskie</option>
+<option value="AO">Angola</option>
+<option value="AQ">Antarktyda</option>
+<option value="AR">Argentyna</option>
+<option value="AS">Samoa Amerykańskie</option>
+<option value="AT">Austria</option>
+<option value="AU">Australia</option>
+<option value="AW">Aruba</option>
+<option value="AZ">Azerbejdżan</option>
+<option value="BA">Bośnia i Hercegowina</option>
+<option value="BB">Barbados</option>
+<option value="BD">Bangladesz</option>
+<option value="BE">Belgia</option>
+<option value="BF">Burkina Faso</option>
+<option value="BG">Bułgaria</option>
+<option value="BH">Bahrajn</option>
+<option value="BI">Burundi</option>
+<option value="BJ">Benin</option>
+<option value="BM">Bermudy</option>
+<option value="BN">Brunei Darussalam</option>
+<option value="BO">Boliwia</option>
+<option value="BR">Brazylia</option>
+<option value="BS">Bahamy</option>
+<option value="BT">Bhutan</option>
+<option value="BV">Wyspa Bouveta</option>
+<option value="BW">Botswana</option>
+<option value="BY">Białoruś</option>
+<option value="BZ">Belize</option>
+<option value="CA">Kanada</option>
+<option value="CC">Wyspy Kokosowe (Keelinga)</option>
+<option value="CD">Kongo, Republika Demokratyczna</option>
+<option value="CF">Rep.Środkowoafryańska</option>
+<option value="CG">Kongo</option>
+<option value="CH">Szwajcaria</option>
+<option value="CI">Wyb.Kości Słoniowej</option>
+<option value="CK">Wyspy Cooka</option>
+<option value="CL">Chile</option>
+<option value="CM">Kamerun</option>
+<option value="CN">Chiny</option>
+<option value="CO">Kolumbia</option>
+<option value="CR">Kostaryka</option>
+<option value="CU">Kuba</option>
+<option value="CV">Zielony Przylądek</option>
+<option value="CX">Wyspa Bożego Narodzenia</option>
+<option value="CY">Cypr</option>
+<option value="CZ">Republika Czeska</option>
+<option value="DE">Niemcy</option>
+<option value="DJ">Dżibuti</option>
+<option value="DK">Dania</option>
+<option value="DM">Dominika</option>
+<option value="DO">Dominikana</option>
+<option value="DZ">Algieria</option>
+<option value="EC">Ekwador</option>
+<option value="EE">Estonia</option>
+<option value="EG">Egipt</option>
+<option value="ER">Erytrea</option>
+<option value="ES">Hiszpania</option>
+<option value="ET">Etiopia</option>
+<option value="FI">Finlandia</option>
+<option value="FJ">Fidżi Republika</option>
+<option value="FK">Falklandy</option>
+<option value="FM">Mikronezja</option>
+<option value="FO">Wyspy Owcze</option>
+<option value="FR">Francja</option>
+<option value="GA">Gabon</option>
+<option value="GB">Wielka Brytania</option>
+<option value="GD">Grenada</option>
+<option value="GE">Gruzja</option>
+<option value="GH">Ghana</option>
+<option value="GI">Gibraltar</option>
+<option value="GL">Grenlandia</option>
+<option value="GM">Gambia</option>
+<option value="GN">Gwinea</option>
+<option value="GQ">Gwinea Równikowa</option>
+<option value="GR">Grecja</option>
+<option value="GS">Południowa Georgia i Południowe Wyspy Sandwich</option>
+<option value="GT">Gwatemala</option>
+<option value="GU">Guam</option>
+<option value="GW">Gwinea-Bissau</option>
+<option value="GY">Gujana</option>
+<option value="HK">Hongkong</option>
+<option value="HM">Wyspy Heard i McDonald</option>
+<option value="HN">Honduras</option>
+<option value="HR">Chorwacja</option>
+<option value="HT">Haiti</option>
+<option value="HU">Węgry</option>
+<option value="ID">Indonezja</option>
+<option value="IE">Irlandia</option>
+<option value="IL">Izrael</option>
+<option value="IN">Indie</option>
+<option value="IO">Brytyjskie Terytorium Oceanu Indyjskiego</option>
+<option value="IQ">Irak</option>
+<option value="IR">Iran</option>
+<option value="IS">Islandia</option>
+<option value="IT">Włochy</option>
+<option value="JM">Jamajka</option>
+<option value="JO">Jordania</option>
+<option value="JP">Japonia</option>
+<option value="KE">Kenia</option>
+<option value="KG">Kirgistan</option>
+<option value="KH">Kambodża</option>
+<option value="KI">Kiribati</option>
+<option value="KM">Komory</option>
+<option value="KN">St.Kitts i Nevis</option>
+<option value="KP">Koreańska Republika Ludowo-Demokratyczna</option>
+<option value="KR">Republika Korei</option>
+<option value="KW">Kuwejt</option>
+<option value="KY">Kajmany</option>
+<option value="KZ">Kazachstan</option>
+<option value="LA">Laos</option>
+<option value="LB">Liban</option>
+<option value="LC">St.Lucia</option>
+<option value="LI">Liechtenstein</option>
+<option value="LK">Sri Lanka</option>
+<option value="LR">Liberia</option>
+<option value="LS">Lesotho</option>
+<option value="LT">Litwa</option>
+<option value="LU">Luksemburg</option>
+<option value="LV">Łotwa</option>
+<option value="LY">Libia</option>
+<option value="MA">Maroko</option>
+<option value="MD">Mołdowa</option>
+<option value="ME">Czarnogóra</option>
+<option value="MG">Madagaskar</option>
+<option value="MH">Wyspy Marshalla</option>
+<option value="MK">Macedonia</option>
+<option value="ML">Mali</option>
+<option value="MM">Myanmar (Burma)</option>
+<option value="MN">Mongolia</option>
+<option value="MO">Makau</option>
+<option value="MP">Mariany Północne</option>
+<option value="MR">Mauretania</option>
+<option value="MS">Montserrat</option>
+<option value="MT">Malta</option>
+<option value="MU">Mauritius</option>
+<option value="MV">Malediwy</option>
+<option value="MW">Malawi</option>
+<option value="MX">Meksyk</option>
+<option value="MY">Malezja</option>
+<option value="MZ">Mozambik</option>
+<option value="NA">Namibia</option>
+<option value="NC">Nowa Kaledonia</option>
+<option value="NE">Niger</option>
+<option value="NF">Norfolk</option>
+<option value="NG">Nigeria</option>
+<option value="NI">Nikaragua</option>
+<option value="NL">Niderlandy</option>
+<option value="NO">Norwegia</option>
+<option value="NP">Nepal</option>
+<option value="NR">Nauru</option>
+<option value="NU">Niue</option>
+<option value="NZ">Nowa Zelandia</option>
+<option value="OM">Oman</option>
+<option value="PA">Panama</option>
+<option value="PE">Peru</option>
+<option value="PF">Polinezja Francuska</option>
+<option value="PG">Papua Nowa Gwinea</option>
+<option value="PH">Filipiny</option>
+<option value="PK">Pakistan</option>
+<option value="PL" selected>Polska</option>
+<option value="PM">St. Pierre i Miquelon</option>
+<option value="PN">Pitcairn</option>
+<option value="PS">Okupowane Terytorium Palestyny</option>
+<option value="PT">Portugalia</option>
+<option value="PW">Palau</option>
+<option value="PY">Paragwaj</option>
+<option value="QA">Katar</option>
+<option value="QR">Zapasy i zaopatrzenie statków w ramach handlu wewn</option>
+<option value="QV">Kraje i terytoria niewyszczególnione w ramach hand</option>
+<option value="RO">Rumunia</option>
+<option value="RU">Rosja</option>
+<option value="RW">Rwanda</option>
+<option value="SA">Arabia Saudyjska</option>
+<option value="SB">Wyspy Salomona</option>
+<option value="SC">Seszele</option>
+<option value="SD">Sudan</option>
+<option value="SE">Szwecja</option>
+<option value="SG">Singapur</option>
+<option value="SH">Święta Helena</option>
+<option value="SI">Słowenia</option>
+<option value="SK">Słowacja</option>
+<option value="SL">Sierra Leone</option>
+<option value="SM">San Marino</option>
+<option value="SN">Senegal</option>
+<option value="SO">Somalia</option>
+<option value="SR">Surinam</option>
+<option value="ST">Wyspy Św.Tomasza i Książęca</option>
+<option value="SV">Salwador</option>
+<option value="SY">Syria</option>
+<option value="SZ">Suazi</option>
+<option value="TC">Wyspy Turks i Caicos</option>
+<option value="TD">Czad</option>
+<option value="TF">Francuskie Terytorium Południowe</option>
+<option value="TG">Togo</option>
+<option value="TH">Tajlandia</option>
+<option value="TJ">Tadżykistan</option>
+<option value="TK">Tokelau</option>
+<option value="TL">Wschodni Tirom</option>
+<option value="TM">Turkmenistan</option>
+<option value="TN">Tunezja</option>
+<option value="TO">Tonga</option>
+<option value="TR">Turcja</option>
+<option value="TT">Trynidad i Tobago</option>
+<option value="TV">Tuvalu</option>
+<option value="TW">Tajwan</option>
+<option value="TZ">Tanzania</option>
+<option value="UA">Ukraina</option>
+<option value="UG">Uganda</option>
+<option value="UM">Minor (Powiernicze Wyspy Pacyfiku Stanów Zjednoczo</option>
+<option value="US">Stany Zjedn. Ameryki</option>
+<option value="UY">Urugwaj</option>
+<option value="UZ">Uzbekistan</option>
+<option value="VA">Watykan</option>
+<option value="VC">St.Vincent i Grenadyny</option>
+<option value="VE">Wenezuela</option>
+<option value="VG">Wyspy Dziewicze-W.B</option>
+<option value="VI">Wyspy Dziewicze-USA</option>
+<option value="VN">Wietnam</option>
+<option value="VU">Vanuatu</option>
+<option value="WF">Wallis i Futuna</option>
+<option value="WS">Samoa</option>
+<option value="XC">Ceuta</option>
+<option value="XK">Kosowo</option>
+<option value="XL">Melilla</option>
+<option value="XS">Serbia</option>
+<option value="YE">Jemen</option>
+<option value="YT">Majotta</option>
+<option value="ZA">Rep.Połud.Afryki</option>
+<option value="ZM">Zambia</option>
+<option value="ZW">Zimbabwe</option>
+</select>
+
+<p class="help-block help-block-error"></p>
+</div>    </div>
+            <div class='col-md-6'>
+            <div class="form-group field-uzytkownikadres-faktura-nip">
+
+<input type="text" id="uzytkownikadres-faktura-nip" class="form-control" name="UzytkownikAdres[faktura][nip]" maxlength="20" placeholder="NIP">
+
+<p class="help-block help-block-error"></p>
+</div>        </div>
+    </div>
+<input type="hidden" id="uzytkownikadres-faktura-adres_nazwa" name="UzytkownikAdres[faktura][adres_nazwa]" value="Adres do faktury">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class='panel panel-default'>
+                <div class='panel-body pb-0'>
+                    <div class='row'>
+                        <div class='col-sm-12'>
+                            <div class="form-group field-uzytkownik-regulamin required">
+
+<input type="text" id="uzytkownik-regulamin" class="form-control cbx-loading" name="Uzytkownik[regulamin]" aria-required="true" data-krajee-checkboxX="checkboxX_18e15574"><label class="cbx-label" for="uzytkownik-regulamin">Akceptuję warunki regulaminu</label>
+
+<p class="help-block help-block-error"></p>
+</div>                            <p><a href="/regulamin" target="_blank">Regulamin dostępny jest pod tym linkiem - kliknij</a></p>
+                        </div>
+
+                        <div class='col-sm-12'>
+                            <div class="form-group field-uzytkownik-daneosobowe required">
+
+<input type="text" id="uzytkownik-daneosobowe" class="form-control cbx-loading" name="Uzytkownik[daneOsobowe]" aria-required="true" data-krajee-checkboxX="checkboxX_18e15574"><label class="cbx-label" style="width:95%" for="uzytkownik-daneosobowe">Wyrażam zgodę na przetwarzanie moich danych osobowych przez Fotoceramika Lech Parpura, Jacek Parpura s.c z siedzibą w Bolesławcu przy ul. Krótka 2, 59-700 Bolesławiec w celu działania w systemie informatycznym fotceramika.pl</label>
+
+<p class="help-block help-block-error"></p>
+</div>                            <p><a href="/rodo" target="_blank">Informacje o przetwarzaniu danych osobowych dostępne są pod tym linkiem - kliknij</a></p>
+                        </div>
+                    </div>
+
+                    <div class='form-group mt15 zapis' style='display: none'>
+                        <button type="submit" class="btn btn-primary"><em class="fa fa-save"></em> Zapisz dane</button>                    </div>
+                </div>
+            </div>
+
+
+            </form>        </div>
+    </div>
+</div>
+
+<div class='container-fluid szybkie-info'>
+    <div class='container-fluid'>
+        <div class='container'>
+            <div class='row'>
+                <div class='col-sm-4'>
+                    <div class='naglowek'>ZŁÓŻ ZAMÓWIENIE</div>
+                    <div>Skorzystaj z naszego formularza zamówieniowego<br/>W tym celu                    </div>
+
+                                            <div>
+                            <a class="btn btn-primary" href="/zamowienie/krok1/nowe"><em class="fa fa-shopping-cart"></em> kliknij tutaj</a>                        </div>
+                                    </div>
+                <div class='col-sm-4'>
+                    <div class='naglowek'>PLIKI DO POBRANIA</div>
+                    <div>Cenniki</div>
+                    <div>
+                        <a class="btn btn-primary" href="/uzytkownik/profil/cennik-dla-kooperantow"><em class="fa fa-download"></em> Dla kooperantów</a>                    </div>
+                    <div style='margin-top: 5px'>
+                        <a class="btn btn-primary" href="/media/cennik_dla_odbiorcow_ind.pdf" target="_blank"><em class="fa fa-download"></em> Odbiorcy indywidalni</a>                    </div>
+                </div>
+                <div class='col-sm-4 adres'>
+                    <div class='naglowek'>FOTOCERAMIKA</div>
+                    <div>59-700 Bolesławiec<br/>ul. Krótka 2, Polska</div>
+                    <div class='kontakt'>
+                        <span>tel.</span> (+48 75) 644 12 10<br/>
+                        <span>kom.</span> +48 606 178 492, +48 608 170 733<br/>
+                        <span>mail</span> <a href="mailto:info@fotoceramika.pl">info@fotoceramika.pl</a>                    </div>
+                    <div class='copyright'>
+                        © 2011 FotoCeramika.pl<br />Wszystkie prawa zastrzeżone                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer-wrapper section">
+    <div class="container">
+        <div class="row footer">
+            <div class="col-12 footer-map">
+                <div class="footer-map-bg">
+                    <img src="./img/location.svg" alt="Ikona pinezka">
+                </div>
+            </div>
+            <div class="col-12 footer-separator">
+                <div class="footer-separator-image">
+                    <img src="./img/Sygnet.png" alt="Ikona fotoceramika">
+                    Fotoceramika
+                </div>
+                <div class="footer-separator-line"></div>
+            </div>
+            <div class="col-sm-12 col-lg-6 col-xl-3 footer-item">
+                <div class="footer-item-header">
+                    <span class="footer-item-header-title">O nas</span>
+                    <div class="underline"></div>
+                </div>
+                <a href="#">O nas</a>
+                <a href="#">Mapa strony</a>
+                <a href="#">Kontakt</a>
+                <a href="#">Regulamin</a>
+            </div>
+            <div class="col-sm-12 col-lg-6 col-xl-3 footer-item">
+                <div class="footer-item-header">
+                    <span class="footer-item-header-title">Prywatność</span>
+                    <div class="underline"></div>
+                </div>
+                <a href="#">Polityka Prywatności RODO</a>
+                <a href="#">Polityka Cookies</a>
+                <a href="#">Dane do przelewu</a>
+                <a href="#">Procedura zwrotu</a>
+            </div>
+            <div class="col-sm-12 col-lg-6 col-xl-3 footer-item">
+                <div class="footer-item-header">
+                    <span class="footer-item-header-title">Metody płatności</span>
+                    <div class="underline"></div>
+                </div>
+                <img src="./img/paynow.png" alt="Ikona paynow">
+                <img src="./img/blik.png" alt="Ikona blik">
+            </div>
+            <div class="col-sm-12 col-lg-6 col-xl-3 footer-item">
+                <div class="footer-item-header">
+                    <span class="footer-item-header-title">Partnerzy logistyczni</span>
+                    <div class="underline"></div>
+                </div>
+                <img src="./img/ups.png" alt="Ikona ups">
+                <img src="./img/inpost.png" alt="Ikona inpost">
+                <img src="./img/pocztapolska.png" alt="Ikona pocztapolska">
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="/assets/4428ebd0/jquery.js"></script>
+<script src="/assets/e1bea3a3/yii.js"></script>
+<script src="/assets/b35d19d8/js/checkbox-x.min.js"></script>
+<script src="/assets/f2a7af74/js/kv-widgets.min.js"></script>
+<script src="/assets/32876c71/jquery.inputmask.bundle.js"></script>
+<script src="/assets/cf5deb09/js/select2.full.min.js"></script>
+<script src="/assets/cf5deb09/js/i18n/pl.js"></script>
+<script src="/assets/2e39dae7/js/select2-krajee.min.js"></script>
+<script src="/assets/e1bea3a3/yii.activeForm.js"></script>
+<script src="/js/toastr.min.js"></script>
+<script src="/js/js.js"></script>
+<script src="/js/jquery.matchHeight.js"></script>
+<script src="/js/jquery.flexverticalcenter.js"></script>
+<script src="/js/pace.min.js"></script>
+<script src="/js/pdfobject.min.js"></script>
+<script src="/js/inputmask.min.js"></script>
+<script src="/assets/d4654e4b/js/bootstrap.js"></script>
+<script src="/assets/f3d530fd/toastr.min.js"></script>
+<script>jQuery(function ($) {
+    $('.btn-przepisz').on('click', function() {
+        $('#nazwa_faktura').val($('#nazwa_wysylka').val());
+        $('#kod_pocztowy_faktura').val($('#kod_pocztowy_wysylka').val());
+        $('#miejscowosc_faktura').val($('#miejscowosc_wysylka').val());
+        $('#ulica_faktura').val($('#ulica_wysylka').val());
+        $('#nr_dom_faktura').val($('#nr_dom_wysylka').val());
+        $('#nr_lokal_faktura').val($('#nr_lokal_wysylka').val());
+        $('#kraj_faktura').val($('#kraj_wysylka').val()).trigger('change');
+        
+        return false;
+    });
+
+    function rodzajKlienta(rodzaj) {
+        if(rodzaj === '1' || rodzaj === '0') {
+            $('.btn-rodzaj-klienta').removeClass('btn-active');
+            
+            $('.adresy').show();
+            $('.zapis').show();
+            
+            $('.adres.wysylka').show();
+            
+            if(rodzaj == '1') {
+                $('.btn-rodzaj-klienta-firma').addClass('btn-active');
+                $("input[name='Uzytkownik[firma]']").val('1');
+                $('.adres.faktura').show();
+                $('.imie_nazwisko').hide();
+                $('.firma_nazwa').show();
+            } else if(rodzaj == '0') {
+                $('.btn-rodzaj-klienta-indywid').addClass('btn-active');
+                $("input[name='Uzytkownik[firma]']").val('0');
+                $('.adres.faktura').hide();
+                $('.imie_nazwisko').show();
+                $('.firma_nazwa').hide();
+            }
+        }
+    }
+    
+    $('.btn-rodzaj-klienta').on('click', function() {
+        if($('#imie_wysylka').val() == '') {
+            $('#imie_wysylka').val($('#imie').val());
+        }
+        if($('#nazwisko_wysylka').val() == '') {
+            $('#nazwisko_wysylka').val($('#nazwisko').val());
+        }
+                
+        $('.adresy').show();
+        
+        var rodzaj = $(this).attr('rodzaj');
+        
+        rodzajKlienta(rodzaj);
+        return false;
+    });
+    rodzajKlienta('');
+    
+    $.fn.ustawMaski = function(kraj) {
+        if(kraj == 'PL') {
+            $('#telefon_kom').inputmask({mask:'+48 999 999 999', showMaskOnHover: true, showMaskOnFocus: true});
+        } else {
+            $('#telefon_kom').inputmask('remove');
+        }
+    };
+    
+    $.fn.ustawMaski('PL');
+    
+    $('#kraj_wysylka, #kraj_faktura').on('change', function() {
+      $.fn.ustawMaski($(this).val());
+    });
+jQuery&&jQuery.pjax&&(jQuery.pjax.defaults.maxCacheLength=0);
+if (jQuery('#uzytkownik-newsletter').data('checkboxX')) { jQuery('#uzytkownik-newsletter').checkboxX('destroy'); }
+jQuery('#uzytkownik-newsletter').checkboxX(checkboxX_18e15574);
+
+if (jQuery('#uzytkownik-sms').data('checkboxX')) { jQuery('#uzytkownik-sms').checkboxX('destroy'); }
+jQuery('#uzytkownik-sms').checkboxX(checkboxX_18e15574);
+
+    $.fn.ustawMaskiwysylka = function() {
+        var kraj = $('#kraj_wysylka').val();
+        
+        if(kraj == 'PL') {
+            $('#kod_pocztowy_wysylka').inputmask('99-999');
+        } else {
+            $('#kod_pocztowy_wysylka').inputmask('remove');
+        }
+    };
+
+    $.fn.ustawMaskiwysylka();
+    
+    $('#kraj_wysylka').on('change', function() {
+      $.fn.ustawMaskiwysylka();
+    });
+jQuery("#w1").inputmask(inputmask_1513daaf);
+if (jQuery('#kraj_wysylka').data('select2')) { jQuery('#kraj_wysylka').select2('destroy'); }
+jQuery.when(jQuery('#kraj_wysylka').select2(select2_418a444d)).done(initS2Loading('kraj_wysylka','s2options_d6851687'));
+
+    $.fn.ustawMaskifaktura = function() {
+        var kraj = $('#kraj_faktura').val();
+        
+        if(kraj == 'PL') {
+            $('#kod_pocztowy_faktura').inputmask('99-999');
+        } else {
+            $('#kod_pocztowy_faktura').inputmask('remove');
+        }
+    };
+
+    $.fn.ustawMaskifaktura();
+    
+    $('#kraj_faktura').on('change', function() {
+      $.fn.ustawMaskifaktura();
+    });
+jQuery("#w2").inputmask(inputmask_1513daaf);
+if (jQuery('#kraj_faktura').data('select2')) { jQuery('#kraj_faktura').select2('destroy'); }
+jQuery.when(jQuery('#kraj_faktura').select2(select2_418a444d)).done(initS2Loading('kraj_faktura','s2options_d6851687'));
+
+if (jQuery('#uzytkownik-regulamin').data('checkboxX')) { jQuery('#uzytkownik-regulamin').checkboxX('destroy'); }
+jQuery('#uzytkownik-regulamin').checkboxX(checkboxX_18e15574);
+
+if (jQuery('#uzytkownik-daneosobowe').data('checkboxX')) { jQuery('#uzytkownik-daneosobowe').checkboxX('destroy'); }
+jQuery('#uzytkownik-daneosobowe').checkboxX(checkboxX_18e15574);
+
+jQuery('#w0').yiiActiveForm([], []);
+    $('.btn-cookies').on('click',function() {
+        $.ajax({
+            type:'POST',
+            url: '/site/cookies-akceptacja',
+            success: function(data) {
+                $('#cookies').hide();
+            },
+            error: function(jqXHR, textStatus, errorThrown){
+                alert(jqXHR.responseText);
+            }
+        });
+    });
+});</script></body>
+</html>

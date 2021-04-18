@@ -1,0 +1,223 @@
+.zamowienie .kroki {
+    margin-bottom: 10px;
+}
+
+.zamowienie .kroki .krok {
+    color: #30a7cc;
+    text-align: center;
+}
+
+.zamowienie .kroki .krok span {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 48px;
+    border: 2px solid #30a7cc;
+    border-radius: 50%;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.zamowienie .kroki .krok span.aktywny {
+    background-color: #30a7cc;
+    color: #FFFFFF;
+}
+
+.zamowienie .kroki .odstep {
+    height: 1px;
+    border: 1px solid #30a7cc;
+    padding: 0 !important;
+    margin-top: 25px;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+.upload {
+    margin-top: 20px;
+}
+
+.file-preview, .file-drop-zone, .file-drop-zone.clickable:hover {
+    border-color: #30a7cc;
+}
+
+.file-drop-zone-title, .form-control, .select2-container--krajee .select2-selection {
+    color: #30a7cc;
+}
+
+.fileinput-remove {
+    display: none !important;
+}
+
+.file-drop-zone-title {
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+.zamowienie .podtytul {
+    background-color: #30a7cc;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.zamowienie .material img {
+    max-height: 115px;
+}
+
+.zamowienie h4 {
+    margin: 0 0 5px 0;
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+
+.zamowienie .kontener-cecha {
+    background-color: #f8f8f8;
+    padding: 0 15px 15px 15px;
+    margin-right: 0px;
+}
+
+.zamowienie .cecha {
+    border-bottom: 1px solid #e2e2e2;
+    padding-bottom: 15px;
+}
+
+.zamowienie .cecha label {
+    font-weight: normal;
+}
+
+.zamowienie .cecha label:hover, .zamowienie .cecha input:hover {
+    cursor: pointer;
+}
+
+.select2-container--krajee .select2-selection--single .select2-selection__arrow {
+    border-left: none;
+}
+
+.zamowienie .kontener-pasek .col {
+    width: 20% !important;
+    white-space: nowrap;
+}
+
+.zamowienie .kontener-pasek .col img {
+    max-width: 100px;
+}
+
+.zamowienie .dodatkowe-oplaty .alert {
+    padding: 10px;
+}
+
+.zamowienie .btn.btn-primary {
+    background-color: #30a7cc !important;
+    border-color: #30a7cc !important;
+    border-radius: 0 !important;
+    color: #fff;
+}
+
+.krajee-default .file-thumb-progress .progress, .krajee-default .file-thumb-progress .progress-bar {
+    height: auto !important;
+}
+
+.file-error-message pre, .file-error-message ul, .krajee-default .file-actions, .krajee-default .file-other-error {
+    margin-top: 30px !important;
+}
+
+.alert-small {
+    padding: 10px !important;
+}
+
+.form-control, .select2-container--krajee .select2-selection {
+    border-color: rgba(224, 224, 224, 1) !important;
+    border-width: thin;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+.btn-paczkomat {
+    background-color: #FAB800 !important;
+    padding: 10px;
+    color: #FFFFFF;
+    margin-left: 10px;
+}
+
+.wybrany_paczkomat {
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.platnosc_dostawa.row {
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.platnosc_dostawa.row label {
+    font-weight: normal !important;
+}
+
+
+.platnosc_dostawa.row:hover {
+    background-color: #f8f8f8;
+}
+
+.platnosc_dostawa.platnosc {
+    line-height: 100px;
+}
+
+.platnosc_dostawa.dostawa {
+    line-height: 80px;
+}
+
+.platnosc_dostawa img {
+    max-height: 50px;
+}
+
+.platnosc_dostawa.online img {
+    max-height: 40px;
+}
+
+.platnosc_dostawa input {
+    margin-right: 20px;
+}
+
+.metody_platnosci_dostawy {
+    margin-bottom: 15px;
+}
+
+.metody_platnosci_dostawy .panel-default {
+    background-color: #F8F8F8 !important;
+}
+
+.adresy_zamowienia .panel-default {
+    background-color: #F8F8F8 !important;
+}
+
+.pr-0 {
+    padding-right: 0 !important
+}
+
+.pl-0 {
+    padding-left: 0 !important
+}
+
+.podsumowanie {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background: #30A7CC;
+    border: 1px solid #30A7CC;
+    border-width: thin;
+    z-index: 10000;
+    display: none;
+    padding: 20px;
+    border-radius: 4px;
+    color: #ffffff;
+}
+
+.orientacja {
+    white-space: nowrap;
+}
+.orientacja img{
+
+}
